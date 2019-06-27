@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/home.css">
+    <title>home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            background: #e1e1e1;
+        }
+        .header {
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <!-- 从外部引入html头部 -->
+        <!--<embed src="header.html" type="text/html" width=1580px height=290px/>-->
+        <iframe src="header.html" width="1580px" height="290px" frameborder="0" scrolling="0"></iframe>
+    </header>
+
+    <!-- 主体 -->
+    <div id="bodyer">
+        <!-- 轮播图 -->
+        <div id="carousel">
+            <iframe src="carousel.html" width="1580px" height="920px" frameborder="0" scrolling="0"></iframe>
+        </div>
+
+        <!-- 1.左边最大的动画 -->
+        <div>
+            <a href="vedio1.html" target="_blank"><img id="vedio-big" src="./img/2b.jpg" alt="这是尼尔机械纪元"></a>
+        </div>
+        <!-- 2.右边第一个 大小160120 -->
+        <div>
+            <a href="vedio2.html" target="_blank"><img id="vedio_right_1" src="./img/sister.jpg" alt="这是小姐姐"></a>
+        </div>
+        <!-- 右边第2个 -->
+        <div>
+            <a href="vedio3.html" target="_blank"><img id="vedio_right_2" src="./img/comic.jpg" alt="这是动画"></a>
+        </div>
+        <div>
+            <a href="vedio4.html" target="_blank"><img id="vedio_right_3" src="./img/tenis.jpg" alt="这是小姐姐"></a>
+        </div>
+
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <!-- 从外部引入html尾部 -->
+        <!--<embed src="footer.html" type="text/html" width="1580px" height="433px"/>-->
+        <iframe src="footer.html" width="1580px" height="393px" frameborder="0" scrolling="0"></iframe>
+    </footer>
+</body>
+</html>

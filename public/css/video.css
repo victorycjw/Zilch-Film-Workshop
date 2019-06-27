@@ -1,0 +1,12 @@
+.vedio{
+    width: 850px;
+    height: 480px;
+    position: absolute;
+    left: 230px;
+    top: 300px;
+    display: block;
+}
+.film{
+    width: 1580px;
+    height: 480px;
+}

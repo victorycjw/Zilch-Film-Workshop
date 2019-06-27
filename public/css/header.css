@@ -1,0 +1,240 @@
+/* 头部大盒子 */
+#head{
+    width: 100%;
+    height: 136px;
+}
+/* 功能栏header头 */
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(212,212,212,.7);
+}
+/* 功能栏左边空白 */
+#header-left{
+    width: 230px;   
+    height: 100px;
+    float: left;
+}
+/* 功能栏中间空白 */
+#header-center{
+    width: 1120px;
+    height: 100px;
+    position: absolute;
+    left: 15%;
+}
+/* logo设置 logo*/
+#logo{
+    width: 152px;
+    height: 100px;
+    float: left;
+}
+/* 搜索div盒子的属性 */
+#searcher{
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    left: 152px;
+}
+/* 搜索框表单 */
+#search_form{
+    width: 350px;
+    height: 60px;
+    background-image: linear-gradient(to right,rgba(202,202,202,.9),rgba(212,212,212,.9));
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+/* 搜索框的属性 */
+#searcher>form>input{
+    width: 255px;
+    height: 38px;
+    position: absolute;
+    top: 20%;
+    left: 10px;
+}
+/* 搜索按钮图片属性 */
+.search_btn>img{
+    width: 38px;
+    height:38px;
+    position: absolute;
+    top: 20%;
+    right: 20px;
+}
+/* 历史登录按钮图标 */
+#login{
+    width: 352px;
+    height: 100px;
+    float: right;
+}
+/* 按钮图片 */
+#login>a{
+    width: 36px;
+    height: 36px;
+    position: relative;
+    right: 0%;
+}
+#login>a>img{
+    display: inline-block;
+    color: #000;    
+    margin: 0 30px 0 0;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 35%;
+}
+/* 功能栏右边空白 */
+#header-right{
+    width: 230px;
+    height: 100px;
+    float: right;
+}
+
+
+/* nav导航栏 */
+#nav{
+    width: 100%;
+    height: 40px;
+    z-index: 1111;
+    background-color: #ffe085;
+    margin: 0 auto;
+    white-space: nowrap;
+    position: relative;
+}
+/* 导航栏nav左边空白 */
+#nav-left{
+    width: 230px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+#ul{
+    width: 1120px;
+    height: 40px;
+    position: absolute;
+    left: 230px;
+}
+/*容器<li>需要定位下拉内容*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+/*不同的下拉按钮样式*/
+.dropbtn_2{
+    display: inline-block;
+    width: 28px;
+    height: 40px;
+    background-color:#ffe085;
+    color: #111;
+    margin-right: 30px;
+    padding: 0px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 40px;
+    float: left;
+}
+.dropbtn_3{
+    display: inline-block;
+    width: 42px;
+    height: 40px;   
+    background-color:#ffe085;
+    color: #111;
+    margin-right: 30px;
+    padding: 0px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 40px;
+    float: left;
+}
+.dropbtn_4{
+    display: inline-block;
+    width: 56px;
+    height: 40px;
+    background-color:#ffe085;
+    color: #111;
+    margin-right: 30px;
+    padding: 0px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 40px;
+    float: left;
+}
+
+/*下拉内容（默认隐藏）*/
+.dropdown-content_2{
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    background-color: #ffe085;
+    min-width: 58px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); */
+}
+.dropdown-content_3{
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    background-color: #ffe085;
+    min-width: 72px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); */
+}
+.dropdown-content_4{
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    background-color: #ffe085;
+    min-width: 86px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); */
+}
+/*下啦菜单的链接*/
+.dropdown-content_2>a{
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content_3>a{
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content_4>a{
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+/*鼠标移上去后修改下拉菜单链接颜色*/
+.dropdown-content_2 a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown-content_3 a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown-content_4 a:hover{
+    background-color: #f1f1f1;
+}
+/*鼠标移上去后显示下拉菜单*/
+.dropdown:hover .dropdown-content_2{
+    display: block;
+}
+.dropdown:hover .dropdown-content_3{
+    display: block;
+}
+.dropdown:hover .dropdown-content_4{
+    display: block;
+}
+/*当下拉内容显示后修改下拉按钮的背景颜色*/
+.dropdown:hover .dropbtn{
+    background-color: white;
+}
+
+/* 导航栏nav右边空白 */
+#nav-right{
+    width: 230px;
+    height: 40px;
+    float: right;
+}

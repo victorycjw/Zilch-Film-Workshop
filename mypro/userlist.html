@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>userlist</title>
+</head>
+<body onload="userlist()">
+    <div id="d1"></div>
+    <!-- <button>显示列表</button> -->
+    <script>
+        function userlist() {
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4    &&  xhr.status==200){
+                    var result=xhr.responseText;
+                    var arr=JSON.parse(result);
+                var html='<table border="1">';
+                html+=`<tr>
+                            <th>登录名称</th>
+                            <th>电子邮箱</th>
+                            <th>联系方式</th>
+                            <th>用户姓名</th>
+                            <th>用户性别</th>
+                            <th>操作</th>
+                        </tr>
+                        `;
+                for(var i=0;i<arr.length;i++){
+                    html+=`
+                            <tr>
+                                <td>${arr[i].uname}</td>
+                                <td>${arr[i].email}</td>
+                                <td>${arr[i].phone}</td>
+                                <td>${arr[i].user_name}</td>
+                        `;
+                        var g=arr[i].gender;
+                        if(g==1)
+                            g="男";
+                        if(g==0)
+                            g="女";
+                        html+=`
+                                <td>${g}</td>
+                                <td>
+                                    <a href="javascript:delUser(${arr[i].uid})">删除</a>
+                                    <a href="updateuser.html?uid=${arr[i].uid}">修改</a>
+                                </td>
+                            </tr>
+                        `;
+                    }
+                html+="</table>" ;
+                d1.innerHTML=html;
+                }
+            }
+
+            xhr.open("get","/mypro/v1/userlist/",true);
+            xhr.send();
+        }
+        function delUser(uid) {
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4    &&  xhr.status==200){
+                    var result=xhr.responseText;
+                    userlist();
+                }
+            }
+            xhr.open("delete","/mypro/v1/deluser/"+uid,true);
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mypro_login</title>
+</head>
+<body>
+    用户名：<input id="uname" type="text" placeholder="请输入用户名"><br>
+    密码：<input id="upwd" type="password" placeholder="请输入密码"><br>
+    <button onclick="login()">登录</button>
+    <script>
+        function login() {
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4    &&  xhr.status==200){
+                    var result=xhr.responseText;
+                    if(result==1){
+                        alert("登录成功！！");
+                    }else{
+                        alert("登录失败!!");
+                    }
+            }
+        }
+            if(uname.value==""){
+                alert("用户名不能为空！！");
+                return;
+            }
+            if(upwd.value==""){
+                alert("密码不能为空！！");
+                return;
+            }
+            xhr.open("get","/mypro/v1/mypro_login/"+uname.value+"-"+upwd.value,true);
+            xhr.send();
+
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* 轮播图 */
+#carousel{
+    width: 100%;
+    height: 900px;
+    order: 111;
+    position: absolute;
+    top: 130px;
+}
+
+/* bodyer主体 */
+#bodyer{
+    width: 100%;
+    height: 5000px;
+}
+#vedio-big{
+    width: 600px;
+    height: 338px;
+    position:absolute;
+    top: 1040px;
+    left: 230px;
+}
+#vedio_right_1{
+    width: 160px;
+    height: 90px;
+    position:absolute;
+    top: 1040px;
+    left: 53%;
+}
+#vedio_right_2{
+    width: 160px;
+    height: 90px;
+    position:absolute;
+    top: 1040px;
+    left: 64%;
+}
+#vedio_right_3{
+    width: 160px;
+    height: 225px;
+    position:absolute;
+    top: 1040px;
+    right: 15%;
+}
