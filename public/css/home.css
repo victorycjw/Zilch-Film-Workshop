@@ -1,42 +1,56 @@
-/* 轮播图 */
-#carousel{
-    width: 100%;
-    height: 900px;
-    order: 111;
-    position: absolute;
-    top: 130px;
+/*头部大盒子*/
+.head{
+    position: fixed;
+    z-index: 25;
 }
 
 /* bodyer主体 */
 #bodyer{
     width: 100%;
     height: 5000px;
+    /*position: relative;*/
+}
+
+/* 轮播图 */
+/*#carousel{*/
+/*width: 100%;*/
+/*height: 900px;*/
+/*order: 111;*/
+/*position: relative;*/
+/*top: 140px;*/
+/*}*/
+
+/*动画*/
+#animation{
+    width: 1580px;
+    position: relative;
+}
+/*防止高度坍塌*/
+#animation:after{
+    display: table;
+    content: "";
 }
 #vedio-big{
     width: 600px;
     height: 338px;
     position:absolute;
-    top: 1040px;
     left: 230px;
 }
 #vedio_right_1{
     width: 160px;
     height: 90px;
     position:absolute;
-    top: 1040px;
     left: 53%;
 }
 #vedio_right_2{
     width: 160px;
     height: 90px;
     position:absolute;
-    top: 1040px;
     left: 64%;
 }
 #vedio_right_3{
     width: 160px;
     height: 225px;
     position:absolute;
-    top: 1040px;
     right: 15%;
 }

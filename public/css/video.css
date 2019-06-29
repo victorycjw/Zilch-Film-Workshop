@@ -3,10 +3,11 @@
     height: 480px;
     position: absolute;
     left: 230px;
-    top: 300px;
+    top: 180px;
     display: block;
 }
 .film{
     width: 1580px;
     height: 480px;
+    margin-bottom: 40px;
 }

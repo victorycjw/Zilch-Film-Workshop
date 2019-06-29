@@ -1,11 +1,12 @@
-/*container��ʽ*/
+/*container大盒子*/
 .container {
     min-width: 992px !important;
     width: 100%;
-    /*padding-right: 15px;*/
-    /*padding-left: 15px;*/
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 @media (max-width: 576px) {
     .container {
@@ -21,13 +22,13 @@
 
 @media (min-width: 992px) {
     .container {
-        max-width: 1580px;
+        max-width: 1120px;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1580px;
+        max-width: 1120px;
     }
 }
 
@@ -182,8 +183,8 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding-left: 0;
-    /*margin-right: 15%;*/
-    /*margin-left: 15%;*/
+    margin-right: 15%;
+    margin-left: 15%;
     list-style: none;
 }
 

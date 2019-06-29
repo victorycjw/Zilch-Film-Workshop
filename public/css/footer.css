@@ -4,27 +4,28 @@ body{
     /* word-break: break-all; */
 }
 /* footer尾巴大盒子 */
-#footer{
+.footer{
     width: 100%;
     height: 333px;
     background: rgba(212, 212, 212,.5);
+    position: relative;
 }
 
 /* footer上部 */
-#footer-top{
+.footer-top{
     border-top:3px solid #f00;
     width: 100%;
     height: 180px;
     margin: 40px 0 20px;
 }
 /* 上部左边空白 */
-#footer-top-left{
+.footer-top-left{
     width:  230px;
     height: 180px;
     float: left;
 }
 /* 上部中间内容 */
-#footer-top-center{
+.footer-top-center{
     width: 1120px;
     height: 180px;
     position: absolute;
@@ -33,7 +34,7 @@ body{
 
 /* 热门电影 */
 /* 内容div框 */
-#content-1{
+.content-1{
     display: block;
     width: 210px;
     height: 181px;
@@ -79,7 +80,7 @@ body{
     cursor: pointer;
 }
 
-#content-2{
+.content-2{
     display: block;
     width: 70px;
     height: 153px;
@@ -89,7 +90,7 @@ body{
     float: left;
     top: 20px;
 }
-#content-3{
+.content-3{
     display: block;
     width: 400px;
     height: 131px;
@@ -128,7 +129,7 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-#content-4{
+.content-4{
     width: 70px;
     height: 181px;
     border-right: none;
@@ -140,57 +141,57 @@ body{
 }
 
 /* 上部右边空白 */
-#footer-top-right{
+.footer-top-right{
     width:  230px;
     height: 180px;
     float: right;
 }
 
 /* 尾巴footer下部 */
-#footer-bottom{
+.footer-bottom{
     width: 100%;
     height: 120px;
     padding: 15px 0;
     text-align: center;
 }
 /* 下部第一行 */
-#footer-bottom-first{
+.footer-bottom-first{
     width: 100%;
     height: 30px;
     text-decoration: none;
 }
-#footer-bottom-first>a{
+.footer-bottom-first>a{
     text-decoration: none;
     color: #999;
     text-align:center;
 }
 
 /* 下部第二行 */
-#footer-bottom-second{
+.footer-bottom-second{
     width: 100%;
     height: 30px;
 }
-#footer-bottom-second>a{
+.footer-bottom-second>a{
     text-decoration: none;
     color: #999;
 }
 
 /* 下部第三行 */
-#footer-bottom-third{
+.footer-bottom-third{
     width: 100%;
     height: 30px;
 }
-#footer-bottom-third>a{
+.footer-bottom-third>a{
     text-decoration: none;
     color: #999;
 }
 
 /* 下部第四行 */
-#footer-bottom-forth{
+.footer-bottom-forth{
     width: 100%;
     height: 30px;
 }
-#footer-bottom-forth>a{
+.footer-bottom-forth>a{
     text-decoration: none;
     color: #999;
 }

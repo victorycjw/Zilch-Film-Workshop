@@ -1,42 +1,43 @@
 /* 头部大盒子 */
-#head{
+.head{
     width: 100%;
     height: 136px;
+    position: relative;
 }
 /* 功能栏header头 */
-#header{
+.header{
     width: 100%;
     height: 100px;
     background-color: rgba(212,212,212,.7);
 }
 /* 功能栏左边空白 */
-#header-left{
+.header-left{
     width: 230px;   
     height: 100px;
     float: left;
 }
 /* 功能栏中间空白 */
-#header-center{
+.header-center{
     width: 1120px;
     height: 100px;
     position: absolute;
     left: 15%;
 }
 /* logo设置 logo*/
-#logo{
+.logo{
     width: 152px;
     height: 100px;
     float: left;
 }
 /* 搜索div盒子的属性 */
-#searcher{
+.searcher{
     width: 600px;
     height: 100px;
     position: absolute;
     left: 152px;
 }
 /* 搜索框表单 */
-#search_form{
+.search_form{
     width: 350px;
     height: 60px;
     background-image: linear-gradient(to right,rgba(202,202,202,.9),rgba(212,212,212,.9));
@@ -46,7 +47,7 @@
     left: 150px;
 }
 /* 搜索框的属性 */
-#searcher>form>input{
+.searcher>form>input{
     width: 255px;
     height: 38px;
     position: absolute;
@@ -62,21 +63,21 @@
     right: 20px;
 }
 /* 历史登录按钮图标 */
-#login{
+.login{
     width: 352px;
     height: 100px;
     float: right;
 }
 /* 按钮图片 */
-#login>a{
+.login>a{
     width: 36px;
     height: 36px;
     position: relative;
     right: 0%;
 }
-#login>a>img{
+.login>a>img{
     display: inline-block;
-    color: #000;    
+    color: #000;
     margin: 0 30px 0 0;
     padding: 0;
     float: right;
@@ -84,7 +85,7 @@
     top: 35%;
 }
 /* 功能栏右边空白 */
-#header-right{
+.header-right{
     width: 230px;
     height: 100px;
     float: right;
@@ -102,13 +103,13 @@
     position: relative;
 }
 /* 导航栏nav左边空白 */
-#nav-left{
+.nav-left{
     width: 230px;
     height: 40px;
     float: left;
     position: relative;
 }
-#ul{
+.ul{
     width: 1120px;
     height: 40px;
     position: absolute;
@@ -124,7 +125,7 @@
     display: inline-block;
     width: 28px;
     height: 40px;
-    background-color:#ffe085;
+    background-color: #ffe085;
     color: #111;
     margin-right: 30px;
     padding: 0px;
@@ -137,7 +138,7 @@
     display: inline-block;
     width: 42px;
     height: 40px;   
-    background-color:#ffe085;
+    background-color: #ffe085;
     color: #111;
     margin-right: 30px;
     padding: 0px;
@@ -233,7 +234,7 @@
 }
 
 /* 导航栏nav右边空白 */
-#nav-right{
+.nav-right{
     width: 230px;
     height: 40px;
     float: right;
