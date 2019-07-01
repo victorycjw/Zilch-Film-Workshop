@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/reg.js"></script>
+    <link rel="stylesheet" href="./css/reg.css"/>
+    <title>register</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+            transition: all .2s;
+        }
+    </style>
+</head>
+<body>
+    <!-- 注册页面大盒子 -->
+    <div>
+        <!-- 一、左侧logo+大图片 -->
+        <div class="pic">
+            <div><a href="#"><img src="./logo/logo.png" alt="logo"/></a></div>
+        </div>
+        <!-- 二、注册大盒子 -->
+        <div class="reg">
+            <!-- 注册内容 -->
+            <div class="content">
+                <form method="post" action="/reg">
+                    <table>
+                        <!-- 9行3列 -->
+                        <!-- 第5行有2列 第7、8、9行全部列合并 别的合并23列 -->
+                        <!-- 1.第一行 -->
+                        <tr class="hei">
+                            <td colspan="3">
+                                <div class="title">欢迎注册</div>
+                                <div class="title">Zilch-Film-Workshop</div></td>
+                        </tr>
+                        <!-- 2.第二行 -->
+                        <tr class="hei">
+                            <td class="td">用户名：</td>
+                            <td colspan="3">
+                                <input class="input" type="text" name="uname" id="uname" placeholder="请输入用户名" onblur="verify_2()"/>
+                            </td>
+                        </tr>
+                        <!-- 2.1验证用户名 -->
+                        <tr>
+                            <td></td>
+                            <td colspan="2"><div id="v2"></div></td>
+                        </tr>
+                        <!-- 3.第三行 -->
+                        <tr class="hei">
+                            <td class="td">密码：</td>
+                            <td colspan="3">
+                                <input class="input" type="password" name="upwd" id="upwd" placeholder="请输入密码" onblur="verify_3()"/>
+                            </td>
+                        </tr>
+                        <!-- 3.1验证密码 -->
+                        <tr>
+                            <td></td>
+                            <td colspan="2"><div id="v3"></div></td>
+                        </tr>
+                        <!-- 4.第四行 -->
+                        <tr class="hei">
+                            <td class="td">二次密码：</td>
+                            <td colspan="3">
+                                <input class="input" type="password" name="rupwd" id="rupwd" placeholder="请再次输入密码" onblur="verify_4()"/>
+                            </td>
+                        </tr>
+                        <!-- 4.1验证二次密码 -->
+                        <tr>
+                            <td></td>
+                            <td colspan="2"><div id="v4"></div></td>
+                        </tr>
+                        <!-- 5.第五行 -->
+                        <tr class="hei">
+                            <td class="td">手机号：</td>
+                            <td>
+                                <select name="select" class="select">
+                                    <option value="中国 +86">中国 +86</option>
+                                    <option value="中国香港 +852">香港 +852</option>
+                                    <option value="中国澳门 +853">澳门 +853</option>
+                                    <option value="中国台湾 +886">台湾 +886</option>
+                                    <option value="韩国 +82">韩国 +82</option>
+                                    <option value="日本 +81">日本 +81</option>
+                                    <option value="美国/加拿大 +1">美国/加拿大 +1</option>
+                                </select>
+                            </td>
+                            <td><input class="phone" type="text" name="phone" id="phone" placeholder="请输入手机号" onblur="verify_5()"/></td>
+                        </tr>
+                        <!-- 5.1验证手机号 -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><div id="v5"></div></td>
+                        </tr>
+                        <!-- 6.第六行 -->
+                        <tr class="hei">
+                            <td class="td">验证码：</td>
+                            <td>
+                                <input class="verify" type="text" placeholder="验证码"/>
+                            </td>
+                            <td>
+                                <a class="view1" href="#">发送短信验证码</a>
+                            </td>
+                        </tr>
+
+                        <!-- 7.第七行 -->
+                        <tr class="hei">
+                            <td colspan="3"><a href="#" class="view2">立即注册</a></td>
+                        </tr>
+                        <!-- 8.第八行 -->
+                        <tr class="hei">
+                            <td colspan="3">
+                                <input type="checkbox" checked/><span class="wen">我已阅读并同意相关服务条款和隐私政策</span>
+                            </td>
+                        </tr>
+                        <!-- 9.第九行 -->
+                        <tr class="copy">
+                            <td colspan="3"><span class="wen">Copyright &copy; 2019-2050 Zilch All Rights Reserved</span></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
