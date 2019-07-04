@@ -33,12 +33,12 @@ body{
 }
 
 /* 热门电影 */
-/* 内容div框 */
+/* 内容div框1 */
 .content-1{
     display: block;
     width: 210px;
     height: 181px;
-    margin-right: 50px;
+    margin-right: 40px;
     position: relative;
     float: left;
     top: 20px;
@@ -80,21 +80,25 @@ body{
     cursor: pointer;
 }
 
+/*特色推荐*/
+/* 内容div框2 */
 .content-2{
     display: block;
     width: 70px;
     height: 153px;
-    margin-right: 100px;
+    margin-right: 80px;
     position: relative;
     min-height: 74px;
     float: left;
     top: 20px;
 }
+/*软件下载*/
+/* 内容div框3 */
 .content-3{
     display: block;
     width: 400px;
     height: 131px;
-    margin-right: 70px;
+    margin-right: 50px;
     font-size: 0;
     letter-spacing: -3px;
     position: relative;
@@ -129,7 +133,23 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+/*我的二维码*/
+/* 内容div框4 */
 .content-4{
+    width: 150px;
+    height: 181px;
+    text-align: center;
+    border-right: none;
+    margin-right: 30px;
+    text-decoration: none;
+    position: relative;
+    min-height: 74px;
+    float: left;
+    top: 20px;
+}
+/*服务*/
+/* 内容div框5 */
+.content-5{
     width: 70px;
     height: 181px;
     border-right: none;

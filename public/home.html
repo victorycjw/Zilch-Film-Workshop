@@ -7,10 +7,13 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/snowfall.jquery.js"></script>
     <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./css/home.css"/>
     <link rel="stylesheet" href="./css/header.css"/>
-    <link rel="stylesheet" href="./css/home_carousel.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/footer.css"/>
     <title>home</title>
     <style>
@@ -25,7 +28,7 @@
         }
     </style>
 </head>
-<body>
+<body class="darkBg">
     <!-- 头部 -->
     <header id="header">
         <!-- 从外部引入html头部 -->
@@ -43,16 +46,35 @@
                     </div>
                     <!-- 搜索框 -->
                     <div class="searcher">
-                        <form method="GET" action="https://www.baclassu.com/" target="_blank" class="search_form">
-                            <input type="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;暗恋橘生淮南">
-                            <button type="submit" class="search_btn"><img src="./img/search-gift.png" alt="搜索按钮"></button>
+                        <form method="GET" action="https://www.search.com/" target="_blank" class="search_form">
+                            <input style="padding:20px" type="search" placeholder="暗恋橘生淮南">
+                            <a href="#" class="search_btn"><img src="./img/search-gift.png" alt="搜索按钮"></a>
                         </form>
                     </div>
                     <!-- 历史登录按钮图标 -->
                     <div class="login">
-                        <a href="#"><img src="./img/login.png" alt="登录按钮"></a>
-                        <a href="#"><img src="./img/upload.png" alt="上传按钮"></a>
-                        <a href="#"><img src="./img/history.png" alt="历史按钮"></a>
+                        <a class="login-a-vip" href="#"><img src="./img/vip.png" alt="VIP"></a>
+                        <!-- 悬浮下拉 -->
+                        <div class="dropdown">
+                            <span><img class="login-a-history" src="./img/history.png" alt="这是历史按钮"></span>
+                            <div class="dd-content">
+                                <!--<a class="dd-content-a">看过</a>-->
+                                <div class="dd-content-1">看过</div>
+                                <div class="dd-content-2">今天</div>
+                                <a href="http://www.baidu.com" class="dd-content-3">
+                                    <img src="./img/shaonianpai.jpg" alt="少年派"/>
+                                    <span class="content1">少年派 第12集</span>
+                                    <span class="content2">观看至37%</span>
+                                </a>
+                                <a href="http://www.baidu.com" class="dd-content-3">
+                                    <img src="./img/shaonianpai.jpg" alt="带着爸爸去留学"/>
+                                    <span class="content1">带着爸爸去留学 第33集</span>
+                                    <span class="content2">观看至88%</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="login-a-upload" href="#"><img src="./img/upload.png" alt="这是上传按钮"></a>
+                        <a class="login-a-login" href="login.html"><img src="./img/login.png" alt="这是登录按钮"></a>
                     </div>
                 </div>
                 <!-- 功能栏右边空白 -->
@@ -195,33 +217,52 @@
                 <!-- 导航栏nav右边空白 -->
                 <div class="nav-right"></div>
             </div>
-
         </div>
     </header>
 
     <!-- 主体 -->
     <div id="bodyer">
         <!-- 一、轮播图 -->
-        <div class="container">
-            <div id="lunbo" class="carousel" data-ride="carousel">
-                <!-- 1.轮播图片 -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active"><a href="https://v.qq.com/x/cover/f8637674mcfvlhi.html?ptag=10521" target="_blank"><img class="w-100" src="./img/siji.jpg" alt="死寂"></a></div>
-                    <div class="carousel-item"><a href="https://v.qq.com/x/cover/3fvg46217gw800n.html?ptag=10521" target="_blank"></a><img class="w-100" src="./img/liulangdiqiu.jpg" alt="流浪地球"></div>
-                    <div class="carousel-item"><a href="https://v.qq.com/x/cover/zatx0zuk94d9aru.html?ptag=10521" target="_blank"></a><img class="w-100" src="./img/touhaowanjia.jpg" alt="头号玩家"></div>
-                    <div class="carousel-item"><a href="https://www.bilibili.com/video/av51811079" target="_blank"></a><img class="w-100" src="./img/dazhentanpikaqiu.jpg" alt="大侦探皮卡丘"></div>
+        <section class="pc-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect">
+                        <a href="https://v.qq.com/x/cover/f8637674mcfvlhi.html?ptag=10521" target="_blank">
+                            <img src="./img/siji.jpg">
+                        </a>
+                        <div class="layer-mask"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://v.qq.com/x/cover/3fvg46217gw800n.html?ptag=10521" target="_blank">
+                            <img src="./img/liulangdiqiu.jpg">
+                        </a>
+                        <div class="layer-mask"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://v.qq.com/x/cover/zatx0zuk94d9aru.html?ptag=10521" target="_blank">
+                            <img src="./img/touhaowanjia.jpg">
+                        </a>
+                        <div class="layer-mask"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.bilibili.com/video/av51811079" target="_blank">
+                            <img src="./img/dazhentanpikaqiu.jpg">
+                        </a>
+                        <div class="layer-mask"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank">
+                            <img src="./img/carousel/carousel_2.jpg">
+                        </a>
+                        <div class="layer-mask"></div>
+                    </div>
                 </div>
-                <!-- 2.轮播指示器 -->
-                <div class="carousel_2">
-                    <!--<ul class="carousel-indicators">-->
-                        <!--<li data-target="#lunbo" data-slide-to="0" class="active"></li>-->
-                        <!--<li data-target="#lunbo" data-slide-to="1" class="active"></li>-->
-                        <!--<li data-target="#lunbo" data-slide-to="2" class="active"></li>-->
-                        <!--<li data-target="#lunbo" data-slide-to="3" class="active"></li>-->
-                    <!--</ul>-->
+                <div class="button">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- 二、小动画 -->
         <!-- 1.火热上映 -->
@@ -232,14 +273,18 @@
         <!-- 1.1火热上映视频 -->
         <div class="animation">
             <div>
-                <!-- 1.1.1.左边最大的动画 -->
-                <a href="vedio1.html" target="_blank"><img id="vedio_big_1" src="./img/2b.jpg" alt="尼尔机械纪元"></a>
-                <!-- 1.1.2.右边第一个 大小160120 -->
-                <a href="vedio2.html" target="_blank"><img id="vedio_right_11" src="./img/sister.jpg" alt="小姐姐"></a>
-                <!-- 1.1.3右边第2个 -->
-                <a href="vedio3.html" target="_blank"><img id="vedio_right_12" src="./img/comic.jpg" alt="动画"></a>
-                <!-- 1.1.4右边第三个 -->
-                <a href="vedio4.html" target="_blank"><img id="vedio_right_13" src="./img/tenis.jpg" alt="小姐姐"></a>
+                <!-- 1.1.1.第一个 200*283 右边间隔36px-->
+                <a href="vedio1.html" target="_blank"><img id="vedio_big_1" src="./img/tangrenjiatanan2.jpg" alt="唐人街探案2"></a>
+                <!-- 1.1.2 第二个 200*283 -->
+                <a href="vedio2.html" target="_blank"><img id="vedio_right_11" src="./img/qianyuqianxun.jpg" alt="千与千寻"></a>
+                <!-- 1.1.3 第三个 200*283 -->
+                <a href="vedio3.html" target="_blank"><img id="vedio_right_12" src="./img/daxiongdeyueqiutanxianji.jpg" alt="哆啦A梦:大雄的月球探险记"></a>
+                <!-- 1.1.4 第四个 200*283 -->
+                <a href="vedio4.html" target="_blank"><img id="vedio_right_13" src="./img/duyezhimingshouhuzhe.jpg" alt="毒液:致命守护者"></a>
+                <!-- 1.1.5 第五个 200*283 -->
+                <a href="vedio5.html" target="_blank"><img id="vedio_right_14" src="./img/dongwushijie.jpg" alt="动物世界"></a>
+                <!-- 1.1.6 第六个 200*283 -->
+                <a href="vedio6.html" target="_blank"><img id="vedio_right_15" src="./img/mingyunzhiye.jpg" alt="命运之夜——天之杯II"></a>
             </div>
         </div>
 
@@ -271,16 +316,36 @@
         <div class="animation">
             <div>
                 <!-- 3.1.1.左边最大的动画 -->
-                <a href="vedio1.html" target="_blank"><img id="vedio_big_3" src="./img/2b.jpg" alt="尼尔机械纪元"></a>
+                <a href="vedio1.html" target="_blank"><img id="vedio_big_3" src="./img/" alt=""></a>
                 <!-- 3.1.2.右边第一个 大小160120 -->
-                <a href="vedio2.html" target="_blank"><img id="vedio_right_31" src="./img/sister.jpg" alt="小姐姐"></a>
+                <a href="vedio2.html" target="_blank"><img id="vedio_right_31" src="./img/" alt=""></a>
                 <!-- 3.1.3右边第2个 -->
-                <a href="vedio3.html" target="_blank"><img id="vedio_right_32" src="./img/comic.jpg" alt="动画"></a>
+                <a href="vedio3.html" target="_blank"><img id="vedio_right_32" src="./img/" alt=""></a>
                 <!-- 3.1.4右边第三个 -->
-                <a href="vedio4.html" target="_blank"><img id="vedio_right_33" src="./img/tenis.jpg" alt="小姐姐"></a>
+                <a href="vedio4.html" target="_blank"><img id="vedio_right_33" src="./img/" alt=""></a>
+            </div>
+        </div>
+
+        <!-- 4.特色策划 -->
+        <div class="title">
+            <img src="./img/tese.png" alt="私人图标"/>
+            <span><h1 class="characters">  特  色  策  划</h1></span>
+        </div>
+        <!-- 4.1.特色策划视频 -->
+        <div class="animation">
+            <div>
+                <!-- 4.1.1.左边最大的动画 -->
+                <a href="vedio1.html" target="_blank"><img id="vedio_big_4" src="./img/" alt=""></a>
+                <!-- 4.1.2.右边第一个 大小160120 -->
+                <a href="vedio2.html" target="_blank"><img id="vedio_right_41" src="./img/" alt=""></a>
+                <!-- 4.1.3右边第2个 -->
+                <a href="vedio3.html" target="_blank"><img id="vedio_right_42" src="./img/" alt=""></a>
+                <!-- 4.1.4右边第三个 -->
+                <a href="vedio4.html" target="_blank"><img id="vedio_right_43" src="./img/" alt=""></a>
             </div>
         </div>
     </div>
+
     <!-- 底部 -->
     <footer id="footer">
         <!-- 从外部引入html尾部 -->
@@ -369,8 +434,15 @@
                             </a>
                         </div>
                     </div>
-                    <!-- 服务 -->
+                    <!-- 二维码 -->
                     <div class="content-4">
+                        <div class="content-title">我的二维码</div>
+                        <div class="content-info">
+                            <img src="./img/erweima.jpg" alt="二维码"/>
+                        </div>
+                    </div>
+                    <!-- 服务 -->
+                    <div class="content-5">
                         <div class="content-title">服务</div>
                         <div class="content-info">
                             <div class="footer-items">
@@ -413,5 +485,37 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS代码 -->
+    <script type="text/javascript">
+        window.onload = function() {
+            var swiper = new Swiper('.swiper-container',{
+                autoplay: false,
+                speed: 1000,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 2,
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                prevButton: '.swiper-button-prev',
+                nextButton: '.swiper-button-next',
+                onInit: function(swiper) {
+                    swiper.slides[2].className = "swiper-slide swiper-slide-active";
+                },
+                breakpoints: {
+                    668: {
+                        slidesPerView: 1
+                    }
+                }
+            });
+        }
+        $(document).ready(function(){
+            $(document).snowfall({image:"./img/1.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
+            $(document).snowfall({image:"./img/2.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
+            $(document).snowfall({image:"./img/3.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
+            $(document).snowfall({image:"./img/4.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
+        });
+    </script>
 </body>
 </html>

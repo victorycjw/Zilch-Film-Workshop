@@ -51,7 +51,7 @@
     width: 255px;
     height: 38px;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 10px;
 }
 /* 搜索按钮图片属性 */
@@ -62,28 +62,119 @@
     top: 20%;
     right: 20px;
 }
-/* 历史登录按钮图标 */
+/* vip历史上传登录按钮图标 */
 .login{
-    width: 352px;
+    width: 368px;
     height: 100px;
     float: right;
+    position: relative;
 }
-/* 按钮图片 */
-.login>a{
+/* vip按钮图片 */
+.login-a-vip{
+    display: inline-block;
     width: 36px;
     height: 36px;
-    position: relative;
-    right: 0%;
+    position: absolute;
+    left: 50px;
+    top: 32px;
 }
-.login>a>img{
+/* 历史按钮图片 */
+.login-a-history{
     display: inline-block;
-    color: #000;
-    margin: 0 30px 0 0;
-    padding: 0;
-    float: right;
-    position: relative;
-    top: 35%;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 116px;
+    top: 15px;
 }
+
+/*历史下拉菜单*/
+.dd-content{
+    width: 310px;
+    height: 500px;
+    z-index: 10000;
+    background: #fff;
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.dd-content-1{
+    width: 310px;
+    height: 50px;
+    text-align: center;
+    color: #ff5c38;
+    font-size: 18px;
+    line-height: 50px;
+    background: #e1e1e1;
+    border-bottom: 2px solid #ff5c38;
+    display: block;
+}
+.dd-content-2{
+    width: 290px;
+    height: 20px;
+    color: #999;
+    font-size: 16px;
+    padding: 0px 0px 0px 20px;
+    display: block;
+}
+.dd-content-3{
+    width: 290px;
+    height: 56px;
+    color: #999;
+    font-size: 16px;
+    padding: 10px 0 0 10px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+.content1{
+    font-size: 13px;
+    color: #111;
+    line-height: 18px;
+    margin-left: 10px;
+    position: absolute;
+    top: 10px;
+}
+.content2{
+    font-size: 10px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+/*鼠标移上去后修改下拉菜单链接颜色*/
+.dd-content-3:hover{
+    background-color: #f1f1f1;
+}
+/*鼠标移上去后显示下拉菜单*/
+.dropdown:hover .dd-content{
+    display: block;
+}
+
+
+/* 上传按钮图片 */
+.login-a-upload{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 182px;
+    top: 32px;
+}
+/* 登录按钮图片 */
+.login-a-login{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 248px;
+    top: 32px;
+}
+
 /* 功能栏右边空白 */
 .header-right{
     width: 230px;

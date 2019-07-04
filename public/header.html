@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./css/header.css">
@@ -13,7 +13,7 @@
             padding: 0;
         }
         body,html{
-            wclassth: 100%;
+            width: 100%;
         }
     </style>
 </head>
@@ -34,14 +34,33 @@
             <div class="searcher">
                 <form method="GET" action="https://www.baclassu.com/" target="_blank" class="search_form">
                     <input type="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;暗恋橘生淮南">
-                    <button type="submit" class="search_btn"><img src="./img/search-gift.png" alt="这是搜索按钮"></button>
+                    <a class="search_btn"><img src="./img/search-gift.png" alt="这是搜索按钮"></a>
                 </form>
             </div>
             <!-- 历史登录按钮图标 -->
             <div class="login">
-                <a href="#"><img src="./img/login.png" alt="这是登录按钮"></a>
-                <a href="#"><img src="./img/upload.png" alt="这是上传按钮"></a>
-                <a href="#"><img src="./img/history.png" alt="这是历史按钮"></a>
+            <a class="login-a-vip" href="#"><img src="./img/vip.png" alt="VIP"></a>
+            <!-- 悬浮下拉 -->
+            <div class="dropdown">
+                <span><img class="login-a-history" src="./img/history.png" alt="这是历史按钮"></span>
+                <div class="dd-content">
+                    <!--<a class="dd-content-a">看过</a>-->
+                    <div class="dd-content-1">看过</div>
+                    <div class="dd-content-2">今天</div>
+                    <a href="http://www.baidu.com" class="dd-content-3">
+                        <img src="./img/shaonianpai.jpg" alt="少年派"/>
+                        <span class="content1">少年派 第12集</span>
+                        <span class="content2">观看至37%</span>
+                    </a>
+                    <a href="http://www.baidu.com" class="dd-content-3">
+                        <img src="./img/shaonianpai.jpg" alt="带着爸爸去留学"/>
+                        <span class="content1">带着爸爸去留学 第33集</span>
+                        <span class="content2">观看至88%</span>
+                    </a>
+                </div>
+            </div>
+            <a class="login-a-upload" href="#"><img src="./img/upload.png" alt="这是上传按钮"></a>
+            <a class="login-a-login" href="login.html"><img src="./img/login.png" alt="这是登录按钮"></a>
             </div>
         </div>
         <!-- 功能栏右边空白 -->
