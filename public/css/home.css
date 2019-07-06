@@ -1,25 +1,8 @@
-/*背景樱花效果*/
-/*.darkBg{*/
-    /*background: #3a3a3a;*/
-/*}*/
-/*body{*/
-    /*background-color:#FFF;*/
-/*}*/
-.snowfall-flakes{
-    animation:sakura 1s linear 0s infinite;
-}
-@keyframes sakura{
-    0% {transform:rotate3d(0, 0, 0, 0deg);}
-    25%{transform:rotate3d(1, 1, 0, 60deg);}
-    50%{transform:rotate3d(1, 1, 0, 0deg);}
-    75%{transform:rotate3d(1, 0, 0, 60deg);}
-    100% {transform:rotate3d(1, 0, 0, 0deg);}
-}
-
-/*头部固定*/
-#header{
-    position: fixed;
-    z-index: 125;
+/* bodyer主体 */
+#bodyer{
+    width: 100%;
+    height: 3000px;
+    position: relative;
 }
 /*撑table，防止影响了布局*/
 #bodyer:before{
@@ -27,13 +10,6 @@
     height: 140px;
     display: table;
     content: "";
-}
-
-/* bodyer主体 */
-#bodyer{
-    width: 100%;
-    height: 2500px;
-    position: relative;
 }
 
 /* 轮播图 */
@@ -48,19 +24,18 @@
 /*文字标题*/
 .title{
     display: block;
-    margin-top: 0.5rem;
+    width: 1200px;
     padding-top: 0.5rem;
     border:2px;
     /*margin-left: 230px;*/
     /*margin-right: 230px;*/
     border-bottom: 3px solid #999;
-    margin: 20px 100px;
+    margin: 0.5rem 200px 20px 200px;
 }
 /*标题文字样式*/
 .characters{
-    font-size: 24px;
+    font: 24px chilier;
     color: #999;
-    font-family: chilier;
     display: inline-block;
 }
 
@@ -76,137 +51,88 @@
 }
 
 /*1.1火热上映视频*/
-#vedio_big_1{
-    width: 200px;
-    height: 285px;
-    margin-left: 100px;
+.first{
+    width: 150px;
+    height: 290px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 40px 200px;
+    padding: 0;
+    font-size: 12px;
+    overflow: hidden;
+    letter-spacing: normal;
+    vertical-align: top;
 }
-#vedio_right_11{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 336px;
+
+.second{
+    width: 150px;
+    height: 290px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 40px 21px;
+    padding: 0;
+    font-size: 12px;
+    overflow: hidden;
+    letter-spacing: normal;
+    vertical-align: top;
 }
-#vedio_right_12{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 572px;
+
+/*视频下文字a标签属性*/
+.art{
+    width: 150px;
+    height: 23px;
+    font-size: 15px;
+    color: #111;
+    text-decoration: none;
+    line-height: 23px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
 }
-#vedio_right_13{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 808px;
-}
-#vedio_right_14{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 1044px;
-}
-#vedio_right_15{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 1280px;
+.art_2{
+    width: 150px;
+    height: 20px;
+    margin: 3px 0 0;
+    overflow: hidden;
+    font-size: 13px;
+    color: #999;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: text;
 }
 
 /*2.1独播影院视频*/
-#vedio_big_2{
+.third{
     width: 600px;
-    height: 385px;
-    margin-left: 100px;
+    height: 454px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 40px 200px;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: normal;
+    vertical-align: top;
 }
-#vedio_right_21{
+.forth{
     width: 160px;
-    height: 85px;
-    position:absolute;
-    left: 736px;
+    height: 189px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 40px 21px;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: normal;
+    vertical-align: top;
 }
-#vedio_right_22{
+.fifth{
     width: 160px;
-    height: 85px;
-    position:absolute;
-    left: 932px;
-}
-#vedio_right_23{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 1124px;
-}
-
-/*3.1.私人影院视频*/
-#vedio_big_3{
-    width: 200px;
-    height: 285px;
-    margin-left: 100px;
-}
-#vedio_right_31{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 336px;
-}
-#vedio_right_32{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 572px;
-}
-#vedio_right_33{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 808px;
-}
-#vedio_right_34{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 1044px;
-}
-#vedio_right_35{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 1280px;
-}
-
-/*4.1.私人影院视频*/
-#vedio_big_4{
-    width: 200px;
-    height: 285px;
-    margin-left: 100px;
-}
-#vedio_right_41{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 336px;
-}
-#vedio_right_42{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 572px;
-}
-#vedio_right_43{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 808px;
-}
-#vedio_right_44{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 1044px;
-}
-#vedio_right_45{
-    width: 200px;
-    height: 285px;
-    position:absolute;
-    left: 1280px;
+    height: 295px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 40px 21px;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: normal;
+    vertical-align: top;
 }

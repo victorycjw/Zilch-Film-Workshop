@@ -8,14 +8,33 @@ body,html{
     height: 100%;
 }*/
 /* 引入头部 */
+/* 头部固定 */
 #header{
     width: 100%;
     height: 140px;
-    position: relative;
-    z-index: 25;
+    position: fixed;
+    z-index: 125;
 }
 /* 引入尾部 */
 #footer{
     width: 100%;
     height: 393px;
+}
+
+/*背景樱花效果*/
+/*.darkBg{*/
+/*background: #3a3a3a;*/
+/*}*/
+/*body{*/
+/*background-color:#FFF;*/
+/*}*/
+.snowfall-flakes{
+    animation:sakura 1s linear 0s infinite;
+}
+@keyframes sakura{
+    0% {transform:rotate3d(0, 0, 0, 0deg);}
+    25%{transform:rotate3d(1, 1, 0, 60deg);}
+    50%{transform:rotate3d(1, 1, 0, 0deg);}
+    75%{transform:rotate3d(1, 0, 0, 60deg);}
+    100% {transform:rotate3d(1, 0, 0, 0deg);}
 }

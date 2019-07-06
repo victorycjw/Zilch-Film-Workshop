@@ -1,0 +1,52 @@
+/* bodyer主体 */
+#bodyer{
+    width: 100%;
+    height: 3000px;
+    position: relative;
+}
+/*撑table，防止影响了布局*/
+#bodyer:before{
+    width: 100%;
+    height: 140px;
+    display: table;
+    content: "";
+}
+/*选项框大盒子*/
+.film-list{
+    width: 100%;
+    height: 318px;
+    background: #f8f8f8;
+    font: 13px numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
+    border-radius: 4px;
+    margin: 40px 0 0 40px;
+    padding: 1px 26px;
+    position: relative;
+}
+.film-list-line{
+    margin: 26px 0;
+    padding-left: 90px;
+    position: relative;
+}
+.film-list-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 50px;
+    margin-right: 20px;
+    padding: 0 5px;
+    border-radius: 16px 0 16px 16px;
+    background-color: #7f7f8b;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+}
+.film-list-items{
+    display: inline-block;
+    margin: 2px 0;
+    padding: 0 10px;
+    border-radius: 15px;
+    color: #999;
+    line-height: 28px;
+    text-decoration: none;
+    vertical-align: top;
+}

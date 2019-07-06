@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <a class="login-a-upload" href="#"><img src="./img/upload.png" alt="这是上传按钮"></a>
-                        <a class="login-a-login" href="login.html"><img src="./img/login.png" alt="这是登录按钮"></a>
+                        <a class="login-a-login" href="login.html" target="_blank"><img src="./img/login.png" alt="这是登录按钮"></a>
                     </div>
                 </div>
                 <!-- 功能栏右边空白 -->
@@ -88,21 +88,15 @@
                 <!-- 导航栏下拉内容 -->
                 <ul type="none" class="ul">
                     <li class="dropdown">
-                        <a class="dropbtn_4">电影精选</a>
-                        <div class="dropdown-content_4">
-                            <a href="#">MAD:AMY</a>
-                            <a href="">MMD:3D</a>
-                            <a href="">短片·手书·配音</a>
-                            <a href="">综合</a>
-                        </div>
+                        <a class="dropbtn_4">电影分类</a>
                     </li>
                     <li class="dropdown">
                         <a class="dropbtn_4">院线大片</a>
                         <div class="dropdown-content_4">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
+                            <a href="#">MAD:AMY</a>
+                            <a href="#">MMD:3D</a>
+                            <a href="#">短片·手书·配音</a>
+                            <a href="#">综合</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -228,25 +222,25 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide swiper-slide-center none-effect">
                         <a href="https://v.qq.com/x/cover/f8637674mcfvlhi.html?ptag=10521" target="_blank">
-                            <img src="./img/siji.jpg">
+                            <img src="./img/carousel/siji.jpg">
                         </a>
                         <div class="layer-mask"></div>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://v.qq.com/x/cover/3fvg46217gw800n.html?ptag=10521" target="_blank">
-                            <img src="./img/liulangdiqiu.jpg">
+                            <img src="./img/carousel/liulangdiqiu.jpg">
                         </a>
                         <div class="layer-mask"></div>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://v.qq.com/x/cover/zatx0zuk94d9aru.html?ptag=10521" target="_blank">
-                            <img src="./img/touhaowanjia.jpg">
+                            <img src="./img/carousel/touhaowanjia.jpg">
                         </a>
                         <div class="layer-mask"></div>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://www.bilibili.com/video/av51811079" target="_blank">
-                            <img src="./img/dazhentanpikaqiu.jpg">
+                            <img src="./img/carousel/dazhentanpikaqiu.jpg">
                         </a>
                         <div class="layer-mask"></div>
                     </div>
@@ -272,19 +266,68 @@
         </div>
         <!-- 1.1火热上映视频 -->
         <div class="animation">
-            <div>
-                <!-- 1.1.1.第一个 200*283 右边间隔36px-->
-                <a href="vedio1.html" target="_blank"><img id="vedio_big_1" src="./img/tangrenjiatanan2.jpg" alt="唐人街探案2"></a>
-                <!-- 1.1.2 第二个 200*283 -->
-                <a href="vedio2.html" target="_blank"><img id="vedio_right_11" src="./img/qianyuqianxun.jpg" alt="千与千寻"></a>
-                <!-- 1.1.3 第三个 200*283 -->
-                <a href="vedio3.html" target="_blank"><img id="vedio_right_12" src="./img/daxiongdeyueqiutanxianji.jpg" alt="哆啦A梦:大雄的月球探险记"></a>
-                <!-- 1.1.4 第四个 200*283 -->
-                <a href="vedio4.html" target="_blank"><img id="vedio_right_13" src="./img/duyezhimingshouhuzhe.jpg" alt="毒液:致命守护者"></a>
-                <!-- 1.1.5 第五个 200*283 -->
-                <a href="vedio5.html" target="_blank"><img id="vedio_right_14" src="./img/dongwushijie.jpg" alt="动物世界"></a>
-                <!-- 1.1.6 第六个 200*283 -->
-                <a href="vedio6.html" target="_blank"><img id="vedio_right_15" src="./img/mingyunzhiye.jpg" alt="命运之夜——天之杯II"></a>
+            <!-- 1.1.1 第一个 150*220 右边间隔21px-->
+            <div class="first">
+                <a href="vedio1.html" target="_blank"><img src="./img/film/tangrenjiatanan2.jpg" alt="唐人街探案2"></a>
+                <div>
+                    <a class="art" href="vedio1.html" target="_blank">唐人街探案2</a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">7770万</div>
+            </div>
+            <!-- 1.1.2 第二个 150*220 -->
+            <div class="second">
+                <a href="vedio2.html" target="_blank"><img src="./img/film/qianyuqianxun.jpg" alt="千与千寻"></a>
+                <div>
+                    <a class="art" href="vedio2.html" target="_blank">千与千寻</a>
+                    <div class="art_2">主演：柊瑠美、入野自由、中村彰男、夏木真理</div>
+                </div>
+                <div class="art_2">2亿</div>
+            </div>
+            <!-- 1.1.3 第三个 150*220 -->
+            <div class="second">
+                <a href="vedio3.html" target="_blank"><img src="./img/film/daxiongdeyueqiutanxianji.jpg" alt="哆啦A梦:大雄的月球探险记"></a>
+                <div>
+                    <a class="art" href="vedio3.html" target="_blank">哆啦A梦:大雄的月球探险记</a>
+                    <div class="art_2">主演：水田山葵，大原惠美，嘉数由美，木村昴，关智一，皆川纯子</div>
+                </div>
+                <div class="art_2">8200万</div>
+            </div>
+            <!-- 1.1.4 第四个 150*220 -->
+            <div class="second">
+                <a href="vedio4.html" target="_blank"><img src="./img/film/duyezhimingshouhuzhe.jpg" alt="毒液:致命守护者"></a>
+                <div>
+                    <a class="art" href="vedio4.html" target="_blank">毒液:致命守护者</a>
+                    <div class="art_2">主演：汤姆·哈迪，米歇尔·威廉姆斯，里兹·阿迈德，珍妮·斯蕾特，克莱图斯·卡萨伊，伍迪·哈里森</div>
+                </div>
+                <div class="art_2">8亿</div>
+            </div>
+            <!-- 1.1.5 第五个 150*220 -->
+            <div class="second">
+                <a href="vedio5.html" target="_blank"><img src="./img/film/dongwushijie.jpg" alt="动物世界"></a>
+                <div>
+                    <a class="art" href="vedio5.html" target="_blank">动物世界</a>
+                    <div class="art_2">主演：李易峰，迈克尔·道格拉斯，周冬雨，曹炳琨，苏可，王戈</div>
+                </div>
+                <div class="art_2">1亿</div>
+            </div>
+            <!-- 1.1.6 第六个 150*220 -->
+            <div class="second">
+                <a href="vedio6.html" target="_blank"><img src="./img/film/mingyunzhiye.jpg" alt="命运之夜——天之杯II"></a>
+                <div>
+                    <a class="art" href="vedio6.html" target="_blank">命运之夜——天之杯II</a>
+                    <div class="art_2">主演：杉山纪彰，下屋则子，神谷浩史，川澄绫子</div>
+                </div>
+                <div class="art_2">4750万</div>
+            </div>
+            <!-- 1.1.7 第七个 150*220 -->
+            <div class="second">
+                <a href="vedio7.html" target="_blank"><img src="./img/film/longmao.jpg" alt="龙猫"></a>
+                <div>
+                    <a class="art" href="vedio7.html" target="_blank">龙猫</a>
+                    <div class="art_2">主演：日高法子，坂本千夏，糸井重里</div>
+                </div>
+                <div class="art_2">3亿</div>
             </div>
         </div>
 
@@ -296,52 +339,249 @@
         <!-- 2.1独播影院视频 -->
         <div class="animation">
             <div>
-                <!-- 2.1.1.左边最大的动画 -->
-                <a href="vedio1.html" target="_blank"><img id="vedio_big_2" src="./img/2b.jpg" alt="尼尔机械纪元"></a>
-                <!-- 2.1.2.右边第一个 大小160120 -->
-                <a href="vedio2.html" target="_blank"><img id="vedio_right_21" src="./img/sister.jpg" alt="小姐姐"></a>
-                <!-- 2.1.3右边第2个 -->
-                <a href="vedio3.html" target="_blank"><img id="vedio_right_22" src="./img/comic.jpg" alt="动画"></a>
-                <!-- 2.1.4右边第三个 -->
-                <a href="vedio4.html" target="_blank"><img id="vedio_right_23" src="./img/tenis.jpg" alt="小姐姐"></a>
+                <!-- 2.1.1 左边最大的动画 600*385 右边间隔21px-->
+                <div class="third">
+                    <a href="vedio1.html" target="_blank"><img src="./img/film/2b.jpg" alt="尼尔机械纪元"></a>
+                    <div>
+                        <a class="art" href="vedio1.html" target="_blank">尼尔机械纪元</a>
+                        <div class="art_2">主演：</div>
+                    </div>
+                    <div class="art_2">7770万</div>
+                </div>
+                <!-- 2.1.2 右边第一个 大小160*120 -->
+                <div class="forth">
+                    <a href="vedio2.html" target="_blank"><img src="./img/film/sister.jpg" alt="小姐姐"></a>
+                    <div>
+                        <a class="art" href="vedio2.html" target="_blank">小姐姐</a>
+                        <div class="art_2">主演：</div>
+                    </div>
+                    <div class="art_2">2亿</div>
+                </div>
+                <!-- 2.1.3 右边第二个 160*120 -->
+                <div class="forth">
+                    <a href="vedio3.html" target="_blank"><img src="./img/film/comic.jpg" alt="可爱动画"></a>
+                    <div>
+                        <a class="art" href="vedio3.html" target="_blank">可爱动画</a>
+                        <div class="art_2">主演：</div>
+                    </div>
+                    <div class="art_2">8200万</div>
+                </div>
+                <!-- 2.1.4 右边第三个 160*226 -->
+                <div class="fifth">
+                    <a href="vedio4.html" target="_blank"><img src="./img/film/tenis.jpg" alt="网王"></a>
+                    <div>
+                        <a class="art" href="vedio4.html" target="_blank">网球王子</a>
+                        <div class="art_2">主演：秦俊杰，王子文，穆婷婷，柏栩栩，张殿菲，张超，毛方圆，王传君，陈泽宇，薛皓文，杨德民，向鼎，乔任梁，吴建飞，钟凯，巫迪文，沈人杰，张晓晨，魏斌，李易峰，彭飞，金世佳，薛之谦，俞思远，秦炎仕，纪宁，赵海涛，张雯，战菁一，宋晓波，姜宏波，高蓓蓓，沈傲君，张德培，徐经纬，顾晓东，袁苑</div>
+                    </div>
+                    <div class="art_2">8亿</div>
+                </div>
             </div>
         </div>
 
-        <!-- 3.私人影院 -->
+        <!-- 3.生化危机系列影院 -->
+        <div class="title">
+            <img src="./img/biohazard.png" alt="生化危机图标"/>
+            <span><h1 class="characters">  生  化  危  机  系  列</h1></span>
+        </div>
+        <!-- 3.1.生化危机系列视频 -->
+        <div class="animation">
+            <!-- 3.1.1 第一个 150*220 右边间隔21px-->
+            <div class="first">
+                <a href="vedio1.html" target="_blank"><img src="./img/film/shenghuaweiji1.jpg" alt="生化危机1"></a>
+                <div>
+                    <a class="art" href="vedio1.html" target="_blank">生化危机1</a>
+                    <div class="art_2">主演：米拉·乔沃维奇，米歇尔·罗德里格兹，埃里克·马比斯</div>
+                </div>
+                <div class="art_2">7770万</div>
+            </div>
+            <!-- 3.1.2 第二个 150*220 -->
+            <div class="second">
+                <a href="vedio2.html" target="_blank"><img src="./img/film/shenghuaweiji2.jpg" alt="生化危机2"></a>
+                <div>
+                    <a class="art" href="vedio2.html" target="_blank">生化危机2</a>
+                    <div class="art_2">主演：米拉·乔沃维奇，西耶娜·盖尔利，奥德·菲尔，托马斯·克莱舒曼</div>
+                </div>
+                <div class="art_2">2亿</div>
+            </div>
+            <!-- 3.1.3 第三个 150*220 -->
+            <div class="second">
+                <a href="vedio3.html" target="_blank"><img src="./img/film/shenghuaweiji3.jpg" alt="生化危机3"></a>
+                <div>
+                    <a class="art" href="vedio3.html" target="_blank">生化危机3</a>
+                    <div class="art_2">主演：米拉·乔沃维奇，奥德·菲尔，艾丽·拉特</div>
+                </div>
+                <div class="art_2">8200万</div>
+            </div>
+            <!-- 3.1.4 第四个 150*220 -->
+            <div class="second">
+                <a href="vedio4.html" target="_blank"><img src="./img/film/shenghuaweiji4.jpg" alt="生化危机4"></a>
+                <div>
+                    <a class="art" href="vedio4.html" target="_blank">生化危机4</a>
+                    <div class="art_2">主演：米拉·乔沃维奇，艾丽·拉特，文特沃斯·米勒，西耶娜·盖尔利，波瑞斯·科乔，肖恩·罗伯茨</div>
+                </div>
+                <div class="art_2">8亿</div>
+            </div>
+            <!-- 3.1.5 第五个 150*220 -->
+            <div class="second">
+                <a href="vedio5.html" target="_blank"><img src="./img/film/shenghuaweiji5.jpg" alt="生化危机5"></a>
+                <div>
+                    <a class="art" href="vedio5.html" target="_blank">生化危机5</a>
+                    <div class="art_2">主演：米拉·乔沃维奇，西耶娜·盖尔利，米歇尔·罗德里格兹，凯文·杜兰，李冰冰，肖恩·罗伯茨</div>
+                </div>
+                <div class="art_2">1亿</div>
+            </div>
+            <!-- 3.1.6 第六个 150*220 -->
+            <div class="second">
+                <a href="vedio6.html" target="_blank"><img src="./img/film/shenghuaweiji6.jpg" alt="生化危机6"></a>
+                <div>
+                    <a class="art" href="vedio6.html" target="_blank">生化危机6</a>
+                    <div class="art_2">主演：米拉·乔沃维奇 ，伊恩·格雷，艾丽·拉特，鲁比·罗丝，李准基，肖恩·罗伯茨，威廉·利维，伊恩·马肯</div>
+                </div>
+                <div class="art_2">4750万</div>
+            </div>
+        </div>
+
+        <!-- 4.私人影院 -->
         <div class="title">
             <img src="./img/siren.png" alt="私人图标"/>
             <span><h1 class="characters">  私  人  电  影</h1></span>
         </div>
-        <!-- 3.1.私人影院视频 -->
+        <!-- 4.1.私人影院视频 -->
         <div class="animation">
-            <div>
-                <!-- 3.1.1.左边最大的动画 -->
-                <a href="vedio1.html" target="_blank"><img id="vedio_big_3" src="./img/" alt=""></a>
-                <!-- 3.1.2.右边第一个 大小160120 -->
-                <a href="vedio2.html" target="_blank"><img id="vedio_right_31" src="./img/" alt=""></a>
-                <!-- 3.1.3右边第2个 -->
-                <a href="vedio3.html" target="_blank"><img id="vedio_right_32" src="./img/" alt=""></a>
-                <!-- 3.1.4右边第三个 -->
-                <a href="vedio4.html" target="_blank"><img id="vedio_right_33" src="./img/" alt=""></a>
+            <!-- 4.1.1 第一个 150*220 右边间隔21px-->
+            <div class="first">
+                <a href="vedio1.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio1.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">7770万</div>
+            </div>
+            <!-- 4.1.2 第二个 150*220 -->
+            <div class="second">
+                <a href="vedio2.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio2.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">2亿</div>
+            </div>
+            <!-- 4.1.3 第三个 150*220 -->
+            <div class="second">
+                <a href="vedio3.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio3.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">8200万</div>
+            </div>
+            <!-- 4.1.4 第四个 150*220 -->
+            <div class="second">
+                <a href="vedio4.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio4.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">8亿</div>
+            </div>
+            <!-- 4.1.5 第五个 150*220 -->
+            <div class="second">
+                <a href="vedio5.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio5.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">1亿</div>
+            </div>
+            <!-- 4.1.6 第六个 150*220 -->
+            <div class="second">
+                <a href="vedio6.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio6.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">4750万</div>
+            </div>
+            <!-- 4.1.7 第七个 150*220 -->
+            <div class="second">
+                <a href="vedio7.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio7.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">3亿</div>
             </div>
         </div>
 
-        <!-- 4.特色策划 -->
+        <!-- 5.特色策划 -->
         <div class="title">
             <img src="./img/tese.png" alt="私人图标"/>
             <span><h1 class="characters">  特  色  策  划</h1></span>
         </div>
-        <!-- 4.1.特色策划视频 -->
+        <!-- 5.1.特色策划视频 -->
         <div class="animation">
-            <div>
-                <!-- 4.1.1.左边最大的动画 -->
-                <a href="vedio1.html" target="_blank"><img id="vedio_big_4" src="./img/" alt=""></a>
-                <!-- 4.1.2.右边第一个 大小160120 -->
-                <a href="vedio2.html" target="_blank"><img id="vedio_right_41" src="./img/" alt=""></a>
-                <!-- 4.1.3右边第2个 -->
-                <a href="vedio3.html" target="_blank"><img id="vedio_right_42" src="./img/" alt=""></a>
-                <!-- 4.1.4右边第三个 -->
-                <a href="vedio4.html" target="_blank"><img id="vedio_right_43" src="./img/" alt=""></a>
+            <!-- 5.1.1.第一个 150*220 右边间隔21px-->
+            <div class="first">
+                <a href="vedio1.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio1.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">7770万</div>
+            </div>
+            <!-- 5.1.2 第二个 150*220 -->
+            <div class="second">
+                <a href="vedio2.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio2.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">2亿</div>
+            </div>
+            <!-- 5.1.3 第三个 150*220 -->
+            <div class="second">
+                <a href="vedio3.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio3.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">8200万</div>
+            </div>
+            <!-- 5.1.4 第四个 150*220 -->
+            <div class="second">
+                <a href="vedio4.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio4.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">8亿</div>
+            </div>
+            <!-- 5.1.5 第五个 150*220 -->
+            <div class="second">
+                <a href="vedio5.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio5.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">1亿</div>
+            </div>
+            <!-- 5.1.6 第六个 150*220 -->
+            <div class="second">
+                <a href="vedio6.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio6.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">4750万</div>
+            </div>
+            <!-- 5.1.7 第七个 150*220 -->
+            <div class="second">
+                <a href="vedio7.html" target="_blank"><img src="./img/" alt=""></a>
+                <div>
+                    <a class="art" href="vedio7.html" target="_blank"></a>
+                    <div class="art_2">主演：</div>
+                </div>
+                <div class="art_2">3亿</div>
             </div>
         </div>
     </div>
