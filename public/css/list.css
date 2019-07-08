@@ -14,12 +14,13 @@
 /*选项框大盒子*/
 .film-list{
     width: 100%;
-    height: 318px;
+    height: 250px;
     background: #f8f8f8;
     font: 13px numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
     border-radius: 4px;
     margin: 40px 0 0 40px;
     padding: 1px 26px;
+    overflow: hidden;
     position: relative;
 }
 .film-list-line{
@@ -46,7 +47,84 @@
     padding: 0 10px;
     border-radius: 15px;
     color: #999;
+    /*font-weight: 700;*/
     line-height: 28px;
     text-decoration: none;
     vertical-align: top;
+}
+.current{
+    position: relative;
+    background-color: #f7eae8;
+    font-weight: 700;
+}
+.film-list .film-list-items:hover{
+    color: #ff5c38;
+}
+
+/*内容大盒子*/
+.content{
+    width: 100%;
+    margin: 50px 0 0 0;
+    /*border: 1px solid #999;*/
+}
+/*动画*/
+.animation{
+    width: 1580px;
+    position: relative;
+}
+/*防止高度坍塌*/
+.animation:after{
+    display: table;
+    content: "";
+}
+
+.first{
+    width: 150px;
+    height: 290px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 40px 200px;
+    padding: 0;
+    font-size: 12px;
+    overflow: hidden;
+    letter-spacing: normal;
+    vertical-align: top;
+}
+
+.second{
+    width: 150px;
+    height: 290px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 40px 21px;
+    padding: 0;
+    font-size: 12px;
+    overflow: hidden;
+    letter-spacing: normal;
+    vertical-align: top;
+}
+
+/*视频下文字a标签属性*/
+.art{
+    width: 150px;
+    height: 23px;
+    font-size: 15px;
+    color: #111;
+    text-decoration: none;
+    line-height: 23px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.art_2{
+    width: 150px;
+    height: 20px;
+    margin: 3px 0 0;
+    overflow: hidden;
+    font-size: 13px;
+    color: #999;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: text;
 }

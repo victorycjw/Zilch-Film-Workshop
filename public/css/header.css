@@ -212,40 +212,12 @@
     display: inline-block;
 }
 /*不同的下拉按钮样式*/
-.dropbtn_2{
+.dropbtn{
     display: inline-block;
-    width: 28px;
-    height: 40px;
+    margin: 0;
+    padding: 0 10px;
     background-color: #ffe085;
     color: #111;
-    margin-right: 30px;
-    padding: 0px;
-    font-size: 14px;
-    cursor: pointer;
-    line-height: 40px;
-    float: left;
-}
-.dropbtn_3{
-    display: inline-block;
-    width: 42px;
-    height: 40px;   
-    background-color: #ffe085;
-    color: #111;
-    margin-right: 30px;
-    padding: 0px;
-    font-size: 14px;
-    cursor: pointer;
-    line-height: 40px;
-    float: left;
-}
-.dropbtn_4{
-    display: inline-block;
-    width: 56px;
-    height: 40px;
-    background-color:#ffe085;
-    color: #111;
-    margin-right: 30px;
-    padding: 0px;
     font-size: 14px;
     cursor: pointer;
     line-height: 40px;
@@ -253,70 +225,28 @@
 }
 
 /*下拉内容（默认隐藏）*/
-.dropdown-content_2{
+.dropdown-content{
     display: none;
     font-size: 12px;
     position: absolute;
     top: 40px;
     background-color: #ffe085;
-    min-width: 58px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); */
-}
-.dropdown-content_3{
-    display: none;
-    font-size: 12px;
-    position: absolute;
-    top: 40px;
-    background-color: #ffe085;
-    min-width: 72px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); */
-}
-.dropdown-content_4{
-    display: none;
-    font-size: 12px;
-    position: absolute;
-    top: 40px;
-    background-color: #ffe085;
-    min-width: 86px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); */
+    min-width: 76px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
 }
 /*下啦菜单的链接*/
-.dropdown-content_2>a{
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content_3>a{
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content_4>a{
+.dropdown-content>a{
     color: black;
     padding: 10px 10px;
     text-decoration: none;
     display: block;
 }
 /*鼠标移上去后修改下拉菜单链接颜色*/
-.dropdown-content_2 a:hover{
-    background-color: #f1f1f1;
-}
-.dropdown-content_3 a:hover{
-    background-color: #f1f1f1;
-}
-.dropdown-content_4 a:hover{
+.dropdown-content a:hover{
     background-color: #f1f1f1;
 }
 /*鼠标移上去后显示下拉菜单*/
-.dropdown:hover .dropdown-content_2{
-    display: block;
-}
-.dropdown:hover .dropdown-content_3{
-    display: block;
-}
-.dropdown:hover .dropdown-content_4{
+.dropdown:hover .dropdown-content{
     display: block;
 }
 /*当下拉内容显示后修改下拉按钮的背景颜色*/
