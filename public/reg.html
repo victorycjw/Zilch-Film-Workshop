@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./js/reg.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.code.js"></script>
     <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./css/reg.css"/>
     <title>register</title>
@@ -19,19 +21,22 @@
 </head>
 <body>
     <!-- 注册页面大盒子 -->
-    <div>
+    <!--<div style="background: url(img/carousel/carousel_7.png) no-repeat;background: #e9e5bf;">-->
+    <div style="background: #e9e5bf;">
         <!-- 一、左侧logo+大图片 -->
         <div class="pic">
-            <div><a href="#"><img src="./logo/logo.png" alt="logo"/></a></div>
+            <div><a href="#"><img src="./img/logo/logo.png" alt="logo"/></a></div>
+            <!-- 430*352 -->
         </div>
+        <img class="cat" src="./img/reg/cat.png" alt="cat"/>
         <!-- 二、注册大盒子 -->
         <div class="reg">
             <!-- 注册内容 -->
             <div class="content">
                 <form method="post" action="/reg">
                     <table>
-                        <!-- 9行3列 -->
-                        <!-- 第5行有2列 第7、8、9行全部列合并 别的合并23列 -->
+                        <!-- 10行3列 -->
+                        <!-- 第5行有2列 第8、9、10行全部列合并 别的合并23列 -->
                         <!-- 1.第一行 -->
                         <tr class="hei">
                             <td colspan="3">
@@ -98,7 +103,7 @@
                         </tr>
                         <!-- 6.第六行 -->
                         <tr class="hei">
-                            <td class="td">验证码：</td>
+                            <td class="td">短信验证码：</td>
                             <td>
                                 <input class="verify" type="text" placeholder="验证码"/>
                             </td>
@@ -106,18 +111,38 @@
                                 <a class="view1" href="#">发送短信验证码</a>
                             </td>
                         </tr>
-
                         <!-- 7.第七行 -->
                         <tr class="hei">
-                            <td colspan="3"><a href="#" class="view2">立即注册</a></td>
+                            <td class="td">验证码：</td>
+                            <td colspan="2">
+                                <input type="text" class="verify input-code" placeholder="验证码">
+                                <span class="code" title="点击切换"></span>
+                            </td>
+                        </tr>
+                        <!-- 7.1验证验证码 -->
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div id="verify"></div>
+                            </td>
+                            <td></td>
                         </tr>
                         <!-- 8.第八行 -->
                         <tr class="hei">
                             <td colspan="3">
-                                <input type="checkbox" checked/><span class="wen">我已阅读并同意相关服务条款和隐私政策</span>
+                                <!--<button class="view2" disabled>立即注册</button>-->
+                                <input type="button" value="立即注册" disabled/>
                             </td>
+
                         </tr>
                         <!-- 9.第九行 -->
+                        <tr class="hei">
+                            <td colspan="3">
+                                <input type="checkbox"/>
+                                <span class="wen">我已阅读并同意相关服务条款和隐私政策</span>
+                            </td>
+                        </tr>
+                        <!-- 10.第十行 -->
                         <tr class="copy">
                             <td colspan="3"><span class="wen">Copyright &copy; 2019-2050 Zilch All Rights Reserved</span></td>
                         </tr>
@@ -126,5 +151,42 @@
             </div>
         </div>
     </div>
+    <!-- 图片验证码JS -->
+    <script>
+        $(function () {
+            $('.code').createCode({
+                len:6
+            });
+        });
+        $('.input-code').blur(function () {
+            if($(this).val().toLowerCase()!==$('.code').children('input').val().toLowerCase()){
+    //          alert('验证码不正确')
+                verify.innerHTML="验证码不正确";
+            }else{
+    //                alert('验证通过')
+                verify.innerHTML="验证通过";
+            }
+        })
+
+//        绑定服务条款勾选事件
+        //1.查找出发事件的元素
+        var chb=document.querySelector("input[type=checkbox]");
+        var btn=document.querySelector("input[type=button]");
+        //2.绑定事件处理函数
+        chb.onclick=function(){
+            var chb=this;
+            //3.查找要修改的元素
+//            var btn=chb.parentNode
+//                    .parentNode
+//                    .previousElementSibling
+//                    .firstChild
+            //4.修改元素
+            if(chb.checked==true){//如果btn选中
+                btn.disabled=false;//让btn启用
+            }else{//否则
+                btn.disabled=true;//让btn禁用
+            }
+        }
+    </script>
 </body>
 </html>

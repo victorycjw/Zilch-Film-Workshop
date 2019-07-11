@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./js/reg.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.code.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/login.css"/>
     <title>login</title>
     <style>
@@ -18,12 +21,12 @@
 </head>
 <body>
     <!-- 注册页面大盒子 -->
-    <div>
+    <div class="background">
         <!-- 一、左侧logo+大图片 -->
         <div class="pic">
-            <div><a href="#"><img src="./logo/logo.png" alt="logo"/></a></div>
+            <div><a href="#"><img src="./img/logo/logo.png" alt="logo"/></a></div>
         </div>
-        <!-- 二、注册大盒子 -->
+        <!-- 二、登录大盒子 -->
         <div class="reg">
             <!-- 注册内容 -->
             <div class="content">
@@ -63,48 +66,27 @@
                         </tr>
                         <!-- 4.第四行 -->
                         <tr class="hei">
-                            <td class="td">手机号：</td>
-                            <td>
-                                <select name="select" class="select">
-                                    <option value="中国 +86">中国 +86</option>
-                                    <option value="中国香港 +852">香港 +852</option>
-                                    <option value="中国澳门 +853">澳门 +853</option>
-                                    <option value="中国台湾 +886">台湾 +886</option>
-                                    <option value="韩国 +82">韩国 +82</option>
-                                    <option value="日本 +81">日本 +81</option>
-                                    <option value="美国/加拿大 +1">美国/加拿大 +1</option>
-                                </select>
+                            <td class="td">验证码：</td>
+                            <td colspan="2">
+                                <input type="text" class="verify input-code" placeholder="验证码">
+                                <span class="code" title="点击切换"></span>
                             </td>
-                            <td><input class="phone" type="text" name="phone" id="phone" placeholder="请输入手机号" onblur="verify_4()"/></td>
                         </tr>
-                        <!-- 4.1验证手机号 -->
+                        <!-- 4.1验证验证码 -->
                         <tr>
                             <td></td>
+                            <td>
+                                <div id="verify"></div>
+                            </td>
                             <td></td>
-                            <td><div id="v4"></div></td>
                         </tr>
                         <!-- 5.第五行 -->
                         <tr class="hei">
-                            <td class="td">验证码：</td>
-                            <td>
-                                <input class="verify" type="text" placeholder="验证码"/>
-                            </td>
-                            <td>
-                                <a class="view1" href="#">发送短信验证码</a>
-                            </td>
-                        </tr>
-
-                        <!-- 6.第六行 -->
-                        <tr class="hei">
-                            <td colspan="3"><a href="#" class="view2">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a></td>
-                        </tr>
-                        <!-- 7.第七行 -->
-                        <tr class="hei">
                             <td colspan="3">
-                                <input type="checkbox" checked/><span class="wen">我已阅读并同意相关服务条款和隐私政策</span>
+                                <a href="#" class="view2">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a>
                             </td>
                         </tr>
-                        <!-- 8.第八行 -->
+                        <!-- 6.第六行 -->
                         <tr class="copy">
                             <td colspan="3"><span class="wen">Copyright &copy; 2019-2050 Zilch All Rights Reserved</span></td>
                         </tr>
@@ -112,6 +94,81 @@
                 </form>
             </div>
         </div>
+        <!-- 尾巴大盒子 -->
+        <div class="footer">
+            <!-- 尾巴footer上部分 -->
+            <div class="footer-top">
+                <!-- 上部左边空白 -->
+                <div class="footer-top-left"></div>
+                <!-- 上部中间内容 -->
+                <div class="footer-top-center">
+                    <!-- 软件下载 -->
+                    <div class="content-3">
+                        <div class="content-list">
+                            <a class="items" href="http://v.qq.com/download.html#phone" target="_blank">
+                                <img src="./img/footer/phone.png" alt="手机版">
+                                <span class="text-icon">手机版</span>
+                            </a>
+                            <a class="items" href="http://v.qq.com/download.html#pc" target="_blank">
+                                <img src="./img/footer/Windows.png" alt="Windows版">
+                                <span class="text-icon">Windows版</span>
+                            </a>
+                            <a class="items" href="http://v.qq.com/download.html#mac" target="_blank">
+                                <img src="./img/footer/mac.png" alt="mac版">
+                                <span class="text-icon">Mac版</span>
+                            </a>
+                            <a class="items" href="http://v.qq.com/download.html#pad" target="_blank">
+                                <img src="./img/footer/ipad.png" alt="ipad版">
+                                <span class="text-icon">iPad版</span>
+                            </a>
+                            <a class="items" href="http://v.qq.com/download.html#tv" target="_blank">
+                                <img src="./img/footer/tv.png" alt="TV版">
+                                <span class="text-icon">TV版</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 上部右边空白-->
+                <div class="footer-top-right"></div>
+            </div>
+
+            <!-- 尾巴footer下部分 -->
+            <div class="footer-bottom">
+                <!-- 下部第一行 -->
+                <div class="footer-bottom-first">
+                    <a href="#">粤网文[2019]6138-1456号</a><span class="letter"> | 增值电信业务经营许可证：</span><a href="#">粤B2-20090059</a> | <a href="#">粤公网安备 44030002000001号</a>
+                </div>
+                <!-- 下部第二行 -->
+                <div class="footer-bottom-second">
+                    <a href="#">关于Zilch</a> | <a href="#">About Zilch</a> | <a href="#">服务条款</a> | <a href="#">广告服务</a> | <a href="#">Zilch招聘</a> | <a href="#">客服中心</a> | <a href="#">网站导航</a>
+                </div>
+                <!-- 下部第三行 -->
+                <div class="footer-bottom-third">
+                    <span class="letter">Copyright &copy; 2019 - 2050 Zilch. </span><a href="#">All Rights Reserved.</a>
+                </div>
+                <!-- 下部第四行 -->
+                <div class="footer-bottom-forth">
+                    <span class="letter">Zilch公司 </span><a href="#">版权所有</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- 图片验证码JS -->
+    <script>
+        $(function () {
+            $('.code').createCode({
+                len:6
+            });
+        });
+        $('.input-code').blur(function () {
+            if($(this).val().toLowerCase()!==$('.code').children('input').val().toLowerCase()){
+//            alert('验证码不正确')
+            verify.innerHTML="验证码不正确";
+            }else{
+//            alert('验证通过')
+            verify.innerHTML="验证通过";
+            }
+        })
+    </script>
 </body>
 </html>

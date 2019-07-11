@@ -2,11 +2,19 @@
 .pic{
     width: 543px;
     height: 100%;
-    background: url(.././img/reg-pic4.jpg) no-repeat;
+    background: url(../img/reg/reg-pic4.jpg) no-repeat;
     position: fixed;
     float: left;
     overflow: hidden;
     background-size: cover;
+}
+.cat{
+    width: 300px;
+    height: 245px;
+    position: absolute;
+    z-index: 1111;
+    left: 560px;
+    top: 400px;
 }
 /*注册样式*/
 .reg{
@@ -82,6 +90,10 @@
      text-align:center;
      line-height: 35px;
  }
+/*图片验证码*/
+.input-code {
+    outline: none;
+}
 /*注册按钮样式*/
 .view2{
      width: 100%;
