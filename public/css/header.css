@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
 /* 头部大盒子 */
 .head{
     width: 100%;
@@ -10,31 +23,25 @@
     height: 100px;
     background-color: rgba(212,212,212,.7);
 }
-/* 功能栏左边空白 */
-.header-left{
-    width: 230px;   
-    height: 100px;
-    float: left;
-}
+
 /* 功能栏中间空白 */
 .header-center{
-    width: 1120px;
+    width: 80%;
     height: 100px;
-    position: absolute;
-    left: 15%;
+    margin-left: 10%;
 }
 /* logo设置 logo*/
 .logo{
-    width: 152px;
+    width: 12%;
     height: 100px;
     float: left;
 }
 /* 搜索div盒子的属性 */
 .searcher{
-    width: 600px;
+    width: 45%;
     height: 100px;
     position: absolute;
-    left: 152px;
+    left: 22%;
 }
 /* 搜索框表单 */
 .search_form{
@@ -64,7 +71,7 @@
 }
 /* vip历史上传登录按钮图标 */
 .login{
-    width: 368px;
+    width: 23%;
     height: 100px;
     float: right;
     position: relative;
@@ -75,8 +82,8 @@
     width: 36px;
     height: 36px;
     position: absolute;
-    left: 50px;
-    top: 32px;
+    left: 5%;
+    top: 30%;
 }
 /* 历史按钮图片 */
 .login-a-history{
@@ -84,26 +91,26 @@
     width: 36px;
     height: 36px;
     position: absolute;
-    left: 116px;
-    top: 15px;
+    left: 30%;
+    top: 32%;
 }
 
 /*历史下拉菜单*/
 .dd-content{
-    width: 310px;
+    width: 280px;
     height: 500px;
     z-index: 10000;
     background: #fff;
     display: none;
     font-size: 12px;
     position: absolute;
-    left: 20px;
-    top: 50px;
+    left: -300%;
+    top: 100%;
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 .dd-content-1{
-    width: 310px;
+    width: 280px;
     height: 50px;
     text-align: center;
     color: #ff5c38;
@@ -114,15 +121,15 @@
     display: block;
 }
 .dd-content-2{
-    width: 290px;
+    width: 270px;
     height: 20px;
     color: #999;
     font-size: 16px;
-    padding: 0px 0px 0px 20px;
+    padding: 0 0 0 20px;
     display: block;
 }
 .dd-content-3{
-    width: 290px;
+    width: 270px;
     height: 56px;
     color: #999;
     font-size: 16px;
@@ -143,7 +150,7 @@
     font-size: 10px;
     margin-left: 10px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 }
 
 /*鼠标移上去后修改下拉菜单链接颜色*/
@@ -162,8 +169,8 @@
     width: 36px;
     height: 36px;
     position: absolute;
-    left: 182px;
-    top: 32px;
+    left: 55%;
+    top: 30%;
 }
 /* 登录按钮图片 */
 .login-a-login{
@@ -171,15 +178,8 @@
     width: 36px;
     height: 36px;
     position: absolute;
-    left: 248px;
-    top: 32px;
-}
-
-/* 功能栏右边空白 */
-.header-right{
-    width: 230px;
-    height: 100px;
-    float: right;
+    left: 80%;
+    top: 30%;
 }
 
 
@@ -188,23 +188,16 @@
     width: 100%;
     height: 40px;
     z-index: 1111;
-    background-color: #ffe085;
+    background-color: #d8d8d8;
     margin: 0 auto;
     white-space: nowrap;
     position: relative;
 }
-/* 导航栏nav左边空白 */
-.nav-left{
-    width: 230px;
-    height: 40px;
-    float: left;
-    position: relative;
-}
+
 .ul{
     width: 1120px;
     height: 40px;
-    position: absolute;
-    left: 230px;
+    margin-left: 10%;
 }
 /*容器<li>需要定位下拉内容*/
 .dropdown{
@@ -216,8 +209,8 @@
     display: inline-block;
     margin: 0;
     padding: 0 10px;
-    background-color: #ffe085;
-    color: #111;
+    background-color: #d8d8d8;
+    color: #000;
     font-size: 14px;
     cursor: pointer;
     line-height: 40px;
@@ -230,7 +223,7 @@
     font-size: 12px;
     position: absolute;
     top: 40px;
-    background-color: #ffe085;
+    background-color: #d8d8d8;
     min-width: 76px;
     /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
 }
@@ -243,7 +236,8 @@
 }
 /*鼠标移上去后修改下拉菜单链接颜色*/
 .dropdown-content a:hover{
-    background-color: #f1f1f1;
+    color: #fff;
+    background-color: #00a1d6;
 }
 /*鼠标移上去后显示下拉菜单*/
 .dropdown:hover .dropdown-content{
@@ -251,12 +245,6 @@
 }
 /*当下拉内容显示后修改下拉按钮的背景颜色*/
 .dropdown:hover .dropbtn{
-    background-color: white;
-}
-
-/* 导航栏nav右边空白 */
-.nav-right{
-    width: 230px;
-    height: 40px;
-    float: right;
+    color: #fff;
+    background-color: #00a1d6;
 }

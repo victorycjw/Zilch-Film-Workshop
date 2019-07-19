@@ -18,18 +18,12 @@ body{
     height: 180px;
     margin: 40px 0 20px;
 }
-/* 上部左边空白 */
-.footer-top-left{
-    width:  230px;
-    height: 180px;
-    float: left;
-}
 /* 上部中间内容 */
 .footer-top-center{
     width: 1120px;
     height: 180px;
     position: absolute;
-    left: 15%;
+    left: 10%;
 }
 
 /* 热门电影 */

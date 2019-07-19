@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<script src="./js/jquery.min.js"></script>-->
-    <!--<script src="./js/popper.min.js"></script>-->
-    <!--<script src="./js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" src="./js/swiper.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/snowfall.jquery.js"></script>
-    <link rel="stylesheet" href="./css/common.css"/>
-    <link rel="stylesheet" href="./css/home.css"/>
     <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/home.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
     <link rel="stylesheet" href="./css/footer.css"/>
     <title>home</title>
     <style>
@@ -30,189 +24,8 @@
 </head>
 <body class="darkBg">
     <!-- 头部 -->
-    <header id="header">
-        <!-- 从外部引入html头部 -->
-        <!-- 头部大盒子 -->
-        <div class="head">
-            <!-- 功能栏 -->
-            <div class="header">
-                <!-- 功能栏左边空白 -->
-                <div class="header-left"></div>
-                <!-- 功能栏中间空白 -->
-                <div class="header-center">
-                    <!-- 一个logo -->
-                    <div class="logo">
-                        <a href="home.html"><img src="./img/logo/logo.png" alt="一个logo！"></a>
-                    </div>
-                    <!-- 搜索框 -->
-                    <div class="searcher">
-                        <form method="GET" action="https://www.search.com/" target="_blank" class="search_form">
-                            <input style="padding:20px" type="search" placeholder="暗恋橘生淮南">
-                            <a href="#" class="search_btn"><img src="./img/header/search-gift.png" alt="搜索按钮"></a>
-                        </form>
-                    </div>
-                    <!-- 历史登录按钮图标 -->
-                    <div class="login">
-                        <a class="login-a-vip" href="#"><img src="./img/header/vip.png" alt="VIP"></a>
-                        <!-- 悬浮下拉 -->
-                        <div class="dropdown">
-                            <span><img class="login-a-history" src="./img/header/history.png" alt="这是历史按钮"></span>
-                            <div class="dd-content">
-                                <!--<a class="dd-content-a">看过</a>-->
-                                <div class="dd-content-1">看过</div>
-                                <div class="dd-content-2">今天</div>
-                                <a href="http://www.baidu.com" class="dd-content-3">
-                                    <img src="./img/header/shaonianpai.jpg" alt="少年派"/>
-                                    <span class="content1">少年派 第12集</span>
-                                    <span class="content2">观看至37%</span>
-                                </a>
-                                <a href="http://www.baidu.com" class="dd-content-3">
-                                    <img src="./img/header/shaonianpai.jpg" alt="带着爸爸去留学"/>
-                                    <span class="content1">带着爸爸去留学 第33集</span>
-                                    <span class="content2">观看至88%</span>
-                                </a>
-                            </div>
-                        </div>
-                        <a class="login-a-upload" href="#"><img src="./img/header/upload.png" alt="这是上传按钮"></a>
-                        <a class="login-a-login" href="login.html" target="_blank"><img src="./img/header/login.png" alt="这是登录按钮"></a>
-                    </div>
-                </div>
-                <!-- 功能栏右边空白 -->
-                <div class="header-right"></div>
-            </div>
-
-            <!-- 导航栏 -->
-            <div id="nav">
-                <!-- 导航栏nav左边空白 -->
-                <div class="nav-left"></div>
-                <!-- 导航栏下拉内容 -->
-                <ul type="none" class="ul">
-                    <li class="dropdown">
-                        <a href="list.html" class="dropbtn" style="text-decoration: none;">电影分类</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">院线大片</a>
-                        <div class="dropdown-content">
-                            <a href="#">MAD:AMY</a>
-                            <a href="#">MMD:3D</a>
-                            <a href="#">短片·手书·配音</a>
-                            <a href="#">综合</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">网络大片</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">内地</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">中国香港</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">美国</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">动作</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">喜剧</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">科幻</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">犯罪</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">爱情</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">独播</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">预告片</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropbtn">电影片库</a>
-                        <div class="dropdown-content">
-                            <a href="#"></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </div>
-                    </li>
-                </ul>
-                <!-- 导航栏nav右边空白 -->
-                <div class="nav-right"></div>
-            </div>
-        </div>
-    </header>
+    <!-- 从外部引入html头部 -->
+    <header id="header" class="fix"></header>
 
     <!-- 主体 -->
     <div id="bodyer">
@@ -265,7 +78,7 @@
             <span><h1 class="characters">  火  热  上  映</h1></span>
         </div>
         <!-- 1.1火热上映视频 -->
-        <div class="animation">
+        <div id="nav1" class="animation">
             <!-- 1.1.1 第一个 150*220 右边间隔21px-->
             <div class="first">
                 <a href="vedio1.html" target="_blank"><img src="./img/film/tangrenjiatanan2.jpg" alt="唐人街探案2"></a>
@@ -337,7 +150,7 @@
             <span><h1 class="characters">  独  播  电  影</h1></span>
         </div>
         <!-- 2.1独播影院视频 -->
-        <div class="animation">
+        <div id="nav2" class="animation">
             <div>
                 <!-- 2.1.1 左边最大的动画 600*385 右边间隔21px-->
                 <div class="third">
@@ -384,7 +197,7 @@
             <span><h1 class="characters">  生  化  危  机  系  列</h1></span>
         </div>
         <!-- 3.1.生化危机系列视频 -->
-        <div class="animation">
+        <div id="nav3" class="animation">
             <!-- 3.1.1 第一个 150*220 右边间隔21px-->
             <div class="first">
                 <a href="vedio1.html" target="_blank"><img src="./img/film/shenghuaweiji1.jpg" alt="生化危机1"></a>
@@ -447,7 +260,7 @@
             <span><h1 class="characters">  私  人  电  影</h1></span>
         </div>
         <!-- 4.1.私人影院视频 -->
-        <div class="animation">
+        <div id="nav4" class="animation">
             <!-- 4.1.1 第一个 150*220 右边间隔21px-->
             <div class="first">
                 <a href="vedio1.html" target="_blank"><img src="./img/film/halibote1.jpg" alt="哈利·波特与魔法石" title="哈利·波特与魔法石"></a>
@@ -514,13 +327,13 @@
         </div>
 
         <!-- 5.私人影院 -->
-        <div class="module">
+        <div id="nav5" class="module">
             <div class="title">
                 <img src="./img/home/siren.png" alt="私人图标"/>
                 <span><h1 class="characters">私人电影</h1></span>
             </div>
             <div class="tab">
-                <div class="tab-item on">最新</div>
+                <div class="tab-item">最新</div>
                 <div class="tab-item">一</div>
                 <div class="tab-item">二</div>
                 <div class="tab-item">三</div>
@@ -528,151 +341,47 @@
                 <div class="tab-item">五</div>
                 <div class="tab-item">六</div>
                 <div class="tab-item">日</div>
+                <div id="active"></div>
+            <!-- 选项卡内容 -->
+                <div>
+                    <div>123</div>
+                    <div>123</div>
+                    <div>123</div>
+                    <div>123</div>
+                    <div>123</div>
+                    <div>123</div>
+                    <div>123</div>
+                    <div>123</div>
+                </div>
             </div>
+        </div>
+
+
+        <!-- 侧边栏 -->
+        <div class="page-bulls">
+            <nav>
+                <a href="#nav1"><span>火热上映</span></a>
+                <a href="#nav2"><span>独播影院</span></a>
+                <a href="#nav3"><span>生化危机</span></a>
+                <a href="#nav4"><span>私人电影</span></a>
+                <a href="#nav5"><span>私人电影</span></a>
+            </nav>
         </div>
     </div>
-
     <!-- 底部 -->
-    <footer id="footer">
-        <!-- 从外部引入html尾部 -->
-        <!-- 尾巴大盒子 -->
-        <div class="footer">
-            <!-- 尾巴footer上部分 -->
-            <div class="footer-top">
-                <!-- 上部左边空白 -->
-                <div class="footer-top-left"></div>
-                <!-- 上部中间内容 -->
-                <div class="footer-top-center">
-                    <!-- 热门电影 -->
-                    <div class="content-1">
-                        <div class="content-title">热门电影</div>
-                        <div class="content-info">
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://v.qq.com/x/cover/3fvg46217gw800n.html?ptag=10521" target="_blank">流浪地球</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://v.qq.com/x/cover/h0meep6p766jgqh.html?ptag=10521" target="_blank">盗梦空间</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://v.qq.com/x/cover/og0eputlxwet1cn.html?ptag=10521" target="_blank">我不是药神</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="http://v.pptv.com/page/gdJFwiaqQAD6hHibM.html" target="_blank">匆匆那年</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">千与千寻</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://pan.baclassu.com/s/1Hl4Dh-pmWoN6s7INnxCQEQ#list/path=%2F&parentPath=%2Fsharelink44046317-69056477589048" title="网盘" target="_blank">碟中谍-系列</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://v.qq.com/x/cover/h188mdjtrh3up22.html?ptag=10520" target="_blank">湄公河行动</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://v.qq.com/x/cover/1o29ui77e85grdr.html?ptag=10521" target="_blank">肖申克的救赎</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://pan.baclassu.com/share/init?surl=aRpP04o8-gMAXph9xPc7iA" title="提取码：v5xa" target="_blank">摔跤吧！爸爸</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="https://v.qq.com/x/cover/803p673mlosoeog.html?ptag=10521" target="_blank">哥斯拉</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 特色推荐 -->
-                    <div class="content-2">
-                        <div class="content-title">特色推荐</div>
-                        <div class="content-info">
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">坚持原创</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">传播文化</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">自导自演</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 软件下载 -->
-                    <div class="content-3">
-                        <div class="content-title">软件下载</div>
-                        <div class="content-list">
-                            <a class="items" href="http://v.qq.com/download.html#phone" target="_blank">
-                                <img src="./img/footer/phone.png" alt="手机版">
-                                <span class="text-icon">手机版</span>
-                            </a>
-                            <a class="items" href="http://v.qq.com/download.html#pc" target="_blank">
-                                <img src="./img/footer/Windows.png" alt="Windows版">
-                                <span class="text-icon">Windows版</span>
-                            </a>
-                            <a class="items" href="http://v.qq.com/download.html#mac" target="_blank">
-                                <img src="./img/footer/mac.png" alt="mac版">
-                                <span class="text-icon">Mac版</span>
-                            </a>
-                            <a class="items" href="http://v.qq.com/download.html#pad" target="_blank">
-                                <img src="./img/footer/ipad.png" alt="ipad版">
-                                <span class="text-icon">iPad版</span>
-                            </a>
-                            <a class="items" href="http://v.qq.com/download.html#tv" target="_blank">
-                                <img src="./img/footer/tv.png" alt="TV版">
-                                <span class="text-icon">TV版</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- 二维码 -->
-                    <div class="content-4">
-                        <div class="content-title">我的二维码</div>
-                        <div class="content-info">
-                            <img src="./img/footer/erweima.jpg" alt="二维码"/>
-                        </div>
-                    </div>
-                    <!-- 服务 -->
-                    <div class="content-5">
-                        <div class="content-title">服务</div>
-                        <div class="content-info">
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">客服</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">反馈</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">投诉</a>
-                            </div>
-                            <div class="footer-items">
-                                <a class="foot-link" href="" target="_blank">合作伙伴</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 上部右边空白-->
-                <div class="footer-top-right"></div>
-            </div>
-
-            <!-- 尾巴footer下部分 -->
-            <div class="footer-bottom">
-                <!-- 下部第一行 -->
-                <div class="footer-bottom-first">
-                    <a href="#">粤网文[2019]6138-1456号</a><span class="letter"> | 增值电信业务经营许可证：</span><a href="#">粤B2-20090059</a> | <a href="#">粤公网安备 44030002000001号</a>
-                </div>
-                <!-- 下部第二行 -->
-                <div class="footer-bottom-second">
-                    <a href="#">关于Zilch</a> | <a href="#">About Zilch</a> | <a href="#">服务条款</a> | <a href="#">广告服务</a> | <a href="#">Zilch招聘</a> | <a href="#">客服中心</a> | <a href="#">网站导航</a>
-                </div>
-                <!-- 下部第三行 -->
-                <div class="footer-bottom-third">
-                    <span class="letter">Copyright &copy; 2019 - 2050 Zilch. </span><a href="#">All Rights Reserved.</a>
-                </div>
-                <!-- 下部第四行 -->
-                <div class="footer-bottom-forth">
-                    <span class="letter">Zilch公司 </span><a href="#">版权所有</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- 从外部引入html尾部 -->
+    <footer id="footer"></footer>
 
     <!-- JS代码 -->
+<!--<script src="./js/jquery.min.js"></script>-->
+<!--<script src="./js/popper.min.js"></script>-->
+<!--<script src="./js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="./js/swiper.min.js"></script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/snowfall.jquery.js"></script>
+<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="./js/header.js"></script>
+<script type="text/javascript" src="./js/footer.js"></script>
     <script type="text/javascript">
 //      轮播图JS
         window.onload = function() {
@@ -704,6 +413,32 @@
             $(document).snowfall({image:"./img/background/3.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
             $(document).snowfall({image:"./img/background/4.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
         });
-    </script>
+//        标签盒子滑动
+
+    $(document).ready(function () {
+
+        /*设置默认激活的选项卡eq(i)*/
+        var aL = $(".tab-item:eq(1)");
+        $("#active").width(aL.innerWidth());
+        $("#active").offset(aL.offset());
+        aL.addClass("tab-itemA");
+
+        /*为每个按钮添加点击事件*/
+        $(".tab-item").click(function() {
+            $("#active").width($(this).innerWidth());   //设置宽度
+            $("#active").offset($(this).offset());   //设置位置
+            $(this).addClass("tab-itemA");
+            $(".tab-item").not(this).removeClass("tab-itemA");
+        });
+
+        /*hover效果*/
+        $(".tab-item").hover(function () {
+            $(this).addClass("tab-itemH")
+        },function () {
+            $(this).removeClass("tab-itemH")
+        })
+
+    });
+</script>
 </body>
 </html>

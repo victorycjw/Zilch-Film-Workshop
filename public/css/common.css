@@ -1,26 +1,3 @@
-/*公共样式*/
-/* *{
-    margin: 0;
-    padding: 0;
-}
-body,html{
-    width: 100%;
-    height: 100%;
-}*/
-/* 引入头部 */
-/* 头部固定 */
-#header{
-    width: 100%;
-    height: 140px;
-    position: fixed;
-    z-index: 125;
-}
-/* 引入尾部 */
-#footer{
-    width: 100%;
-    height: 393px;
-}
-
 /*背景樱花效果*/
 /*.darkBg{*/
 /*background: #3a3a3a;*/
