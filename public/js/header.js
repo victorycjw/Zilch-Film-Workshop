@@ -1,12 +1,12 @@
 //js/header.js
-/*°üº¬Ò³Í·Ïà¹ØµÄËùÓĞ´úÂë*/
+/*åŒ…å«é¡µå¤´ç›¸å…³çš„æ‰€æœ‰ä»£ç */
 $(function(){
     $.ajax({
         url:"header.html",
         type:"get",
-        success:function(html){
+        success:function(result){
             // console.log(html)
-            $(html).replaceAll("#header");
+            $(result).replaceAll("#header");
             $(`<link rel="stylesheet" href="css/header.css"/>`).appendTo("head");
             $(`<link rel="stylesheet" href="css/common.css"/>`).appendTo("head");
         }

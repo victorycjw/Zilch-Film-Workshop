@@ -1,14 +1,14 @@
-//js/header.js
-/*°üº¬Ò³Í·Ïà¹ØµÄËùÓĞ´úÂë*/
+//js/footer.js
+/*åŒ…å«é¡µå¤´ç›¸å…³çš„æ‰€æœ‰ä»£ç */
 $(function(){
     $.ajax({
         url:"footer.html",
         type:"get",
-        success:function(html){
+        success:function(result){
             // console.log(html)
-            $(html).replaceAll("#footer");
-            $(`<link rel="stylesheet" href="css/footer.css"/>`).appendTo("foot");
-            $(`<link rel="stylesheet" href="css/common.css"/>`).appendTo("foot");
+            $(result).replaceAll("#footer");
+            $(`<link rel="stylesheet" href="css/footer.css"/>`).appendTo("head");
+            $(`<link rel="stylesheet" href="css/common.css"/>`).appendTo("head");
         }
     })
 })
