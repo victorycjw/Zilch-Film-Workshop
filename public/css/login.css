@@ -1,217 +1,205 @@
-/*ÕûÌå±³¾°*/
+/*æ•´ä½“èƒŒæ™¯*/
 .background{
     background: url(../img/carousel/carousel_2.jpg) no-repeat;
 }
-/* ²»ÎªÈËÖªµÄ¶«Î÷ */
+/* ä¸ä¸ºäººçŸ¥çš„ä¸œè¥¿ */
 body{
-    font:12px/1.5 numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
-    /* word-break: break-all; */
+    font:0.75rem/1.5 numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
+   /* word-break: break-all;
+    */
 }
-
-/*Í¼Æ¬ÑùÊ½*/
+/*å›¾ç‰‡æ ·å¼*/
 .pic{
-    width: 543px;
+    width: 33.9375rem;
     height: 100%;
-    /*background: url(../img/reg/reg-pic5.jpg) no-repeat;*/
+   /*background: url(../img/reg/reg-pic5.jpg) no-repeat;
+    */
     float: left;
     overflow: hidden;
     background-size: cover;
 }
-/*×¢²áÑùÊ½*/
-.reg{
-    width: 500px;
-    height: 475px;
+/*ç™»å½•æ ·å¼*/
+.login{
+    width: 31.25rem;
+    height: 29.6875rem;
     background: rgba(255,255,255,0);
-    margin: 0 200px;
+    margin: 0 12.5rem;
     position: relative;
-    left: 680px;
+    left: 38rem;
 }
-/*×¢²áÄÚÈÝÑùÊ½*/
+/*æ³¨å†Œå†…å®¹æ ·å¼*/
 .content{
     position: absolute;
-    top: 40px;
+    top: 2.5rem;
 }
-/*ÐÐ¸ß*/
+/*è¡Œé«˜*/
 .hei{
-    height: 60px;
+    height: 3.75rem;
 }
-/*±êÌâÎÄ×ÖÑùÊ½*/
+/*æ ‡é¢˜æ–‡å­—æ ·å¼*/
 .title{
-    font-size: 40px;
-    margin: 0px 0px 20px;
+    font-size: 2.5rem;
+    margin: 0rem 0rem 1.25rem;
     color: white;
 }
-/*ÁÐÑùÊ½*/
+/*åˆ—æ ·å¼*/
 .td{
-    font-size: 20px;
-    width: 120px;
-    padding-left: 20px;
+    font-size: 1.25rem;
+    width: 7.5rem;
+    padding-left: 1.25rem;
     color: white;
 }
-/*inputÊäÈë¿òµÄÑùÊ½*/
+/*inputè¾“å…¥æ¡†çš„æ ·å¼*/
 .input{
-    width: 300px;
-    height: 35px;
-    padding: 0px 20px;
-    border-radius: 3px;
+    width: 18.75rem;
+    height: 2.1875rem;
+    padding: 0rem 1.25rem;
+    border-radius: 0.1875rem;
     border: 1px solid #aaa;
 }
-/*ÏÂÀ­¿òµÄÑùÊ½*/
+/*ä¸‹æ‹‰æ¡†çš„æ ·å¼*/
 .select{
-    width: 120px;
-    height: 35px;
-    padding: 0px 10px;
-    border-radius: 3px;
+    width: 7.5rem;
+    height: 2.1875rem;
+    padding: 0rem 0.625rem;
+    border-radius: 0.1875rem;
     border: 1px solid #aaa;
 }
-/*ÑéÖ¤Âë¿òµÄÑùÊ½*/
+/*éªŒè¯ç æ¡†çš„æ ·å¼*/
 .verify{
-    width: 80px;
-    height: 35px;
-    padding: 0px 20px;
-    border-radius: 3px;
+    width: 5rem;
+    height: 2.1875rem;
+    padding: 0rem 1.25rem;
+    border-radius: 0.1875rem;
     border: 1px solid #aaa;
 }
-/*ÊÖ»úºÅ¿òµÄÑùÊ½*/
+/*æ‰‹æœºå·æ¡†çš„æ ·å¼*/
 .phone{
-    width: 175px;
-    height: 35px;
-    padding: 0px 20px;
-    border-radius: 3px;
+    width: 10.9375rem;
+    height: 2.1875rem;
+    padding: 0rem 1.25rem;
+    border-radius: 0.1875rem;
     border: 1px solid #aaa;
 }
-/*·¢ËÍ¶ÌÐÅÑéÖ¤Âë°´Å¥ÑùÊ½*/
+/*å‘é€çŸ­ä¿¡éªŒè¯ç æŒ‰é’®æ ·å¼*/
 .view1{
-     width: 220px;
-     height: 35px;
-     display:block;
-     background-image:linear-gradient(to bottom,#27b1f6,#0aa1ed);
-     border-radius: 3px;
-     font-size: 20px;
-     color:#fff;
-     text-decoration:none;
-     text-align:center;
-     line-height: 35px;
- }
-/*Í¼Æ¬ÑéÖ¤Âë*/
+    width: 13.75rem;
+    height: 2.1875rem;
+    display:block;
+    background-image:linear-gradient(to bottom,#27b1f6,#0aa1ed);
+    border-radius: 0.1875rem;
+    font-size: 1.25rem;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    line-height: 2.1875rem;
+}
+/*å›¾ç‰‡éªŒè¯ç */
 .input-code {
     outline: none;
 }
-/*µÇÂ¼°´Å¥ÑùÊ½*/
+/*ç™»å½•æŒ‰é’®æ ·å¼*/
 .view2{
-     width: 100%;
-     height: 50px;
-     display:block;
-     background-image:linear-gradient(to bottom,#27b1f6,#0aa1ed);
-     margin-top: 15px;
-     border-radius: 3px;
-     font-size: 20px;
-     color:#fff;
-     text-decoration:none;
-     text-align:center;
-     line-height: 50px;
+    width: 100%;
+    height: 3.125rem;
+    display:block;
+    background-image:linear-gradient(to bottom,#27b1f6,#0aa1ed);
+    margin-top: 0.9375rem;
+    border-radius: 0.1875rem;
+    font-size: 1.25rem;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    line-height: 3.125rem;
 }
-/*Ìõ¿î°æÈ¨ÎÄ×ÖÑùÊ½*/
+/*æ¡æ¬¾ç‰ˆæƒæ–‡å­—æ ·å¼*/
 .wen{
     color: white;
-    font-size: 13px;
-    line-height: 30px;
+    font-size: 0.8125rem;
+    line-height: 1.875rem;
 }
 .copy{
     text-align: center;
 }
-
-
-
-/* footerÎ²°Í´óºÐ×Ó */
+/* footerå°¾å·´å¤§ç›’å­ */
 .footer{
     width: 100%;
-    height: 222px;
+    height: 13.875rem;
     background: rgba(255,255,255,0);
     position: relative;
 }
-
-/* footerÉÏ²¿ */
+/* footerä¸Šéƒ¨ */
 .footer-top{
     width: 100%;
-    height: 80px;
-    margin: 70px 0 20px;
+    height: 5rem;
+    margin: 4.375rem 0 1.25rem;
 }
-/* ÉÏ²¿×ó±ß¿Õ°× */
-.footer-top-left{
-    width:  590px;
-    height: 80px;
-    float: left;
-}
-/* ÉÏ²¿ÖÐ¼äÄÚÈÝ */
+/* ä¸Šéƒ¨ä¸­é—´å†…å®¹ */
 .footer-top-center{
-    width: 400px;
-    height: 80px;
+    width: 25rem;
+    height: 5rem;
     position: absolute;
-    left: 590px;
+    left: 30.1875rem;
 }
-
-/* ÎÄ×Ö±êÌâ */
+/* æ–‡å­—æ ‡é¢˜ */
 .content-title{
     display: block;
-    font-size: 17px;
-    font-weight: 700px;
-    margin: 0 0 15px;
+    font-size: 1.0625rem;
+    font-weight: 43.75rem;
+    margin: 0 0 0.9375rem;
     color: #0aafed;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     letter-spacing: normal;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
-/* Á´½Ó */
+/* é“¾æŽ¥ */
 .content-info{
     color: #0aafed;
     font-size: 0;
-    letter-spacing: -3px;
+    letter-spacing: -0.1875rem;
 }
 .footer-items{
     display: inline-block;
-    width: 80px;
-    height: 21px;
-    margin-right: 10px;
-    margin-bottom: 7px;
-    font-size: 12px;
+    width: 5rem;
+    height: 1.3125rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.4375rem;
+    font-size: 0.75rem;
     letter-spacing: normal;
-    line-height: 21px;
+    line-height: 1.3125rem;
     vertical-align: top;
 }
 .foot-link{
     color: #0aafed;
-    #0aafed-space: nowrap;
-    outline: 0 none;
-    text-decoration: none;
-    cursor: pointer;
+    white-space: nowrap;
+    outline:0 none;
+    text-decoration:none;
+    cursor:pointer;
 }
-
-
-/*Èí¼þÏÂÔØ*/
-/* ÄÚÈÝdiv¿ò3 */
+/*è½¯ä»¶ä¸‹è½½*/
+/* å†…å®¹divæ¡†3 */
 .content-3{
     display: block;
-    width: 400px;
-    height: 80px;
+    width: 25rem;
+    height: 5rem;
     font-size: 0;
-    letter-spacing: -3px;
+    letter-spacing: -0.1875rem;
     position: relative;
-    min-height: 74px;
+    min-height: 4.625rem;
     float: left;
-    top: 20px;
+    top: 1.25rem;
 }
 .content-list{
     font-size: 0;
-    letter-spacing: -3px;
+    letter-spacing: -0.1875rem;
 }
 .items{
     display: inline-block;
-    width: 80px;
+    width: 5rem;
     color: #0aafed;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: normal;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-align: center;
     outline: 0 none;
     text-decoration: none;
@@ -219,70 +207,60 @@ body{
 }
 .text-icon{
     display: inline-block;
-    width: 80px;
+    width: 5rem;
     color: #0aafed;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: normal;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
 }
-/* ÉÏ²¿ÓÒ±ß¿Õ°× */
-.footer-top-right{
-    width:  590px;
-    height: 80px;
-    float: right;
-}
-
-/* Î²°ÍfooterÏÂ²¿ */
+/* å°¾å·´footerä¸‹éƒ¨ */
 .footer-bottom{
     width: 100%;
-    height: 120px;
+    height: 7.5rem;
     padding: 0;
     text-align: center;
 }
-/* ÏÂ²¿µÚÒ»ÐÐ */
+/* ä¸‹éƒ¨ç¬¬ä¸€è¡Œ */
 .footer-bottom-first{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
 }
 .footer-bottom-first>a{
     text-decoration: none;
     color: #0aafed;
     text-align:center;
 }
-
-/* ÏÂ²¿µÚ¶þÐÐ */
+/* ä¸‹éƒ¨ç¬¬äºŒè¡Œ */
 .footer-bottom-second{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
 }
 .footer-bottom-second>a{
     text-decoration: none;
     color: #0aafed;
 }
-
-/* ÏÂ²¿µÚÈýÐÐ */
+/* ä¸‹éƒ¨ç¬¬ä¸‰è¡Œ */
 .footer-bottom-third{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
 }
 .footer-bottom-third>a{
     text-decoration: none;
     color: #0aafed;
 }
-
-/* ÏÂ²¿µÚËÄÐÐ */
+/* ä¸‹éƒ¨ç¬¬å››è¡Œ */
 .footer-bottom-forth{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
 }
 .footer-bottom-forth>a{
     text-decoration: none;
     color: #0aafed;
 }
-/* span×Öletter */
+/* spanå­—letter */
 .letter{
     color: #0aafed;
 }

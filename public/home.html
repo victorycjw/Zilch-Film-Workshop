@@ -28,7 +28,7 @@
     <!-- 主体 -->
     <div id="bodyer">
         <!-- 一、轮播图 -->
-        <section class="pc-banner">
+        <div class="pc-banner">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide swiper-slide-center none-effect">
@@ -67,16 +67,16 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- 二、小动画 -->
         <!-- 1.火热上映 -->
-        <div class="title">
+        <div id="nav1" class="title">
             <img src="./img/home/huoreshangying.png" alt="热映图标"/>
             <span><h1 class="characters">  火  热  上  映</h1></span>
         </div>
         <!-- 1.1火热上映视频 -->
-        <div id="nav1" class="animation">
+        <div class="animation">
             <!-- 1.1.1 第一个 150*220 右边间隔21px-->
             <div class="first">
                 <a href="vedio1.html" target="_blank"><img src="./img/film/tangrenjiatanan2.jpg" alt="唐人街探案2"></a>
@@ -143,12 +143,12 @@
         </div>
 
         <!-- 2.独播影院 -->
-        <div class="title">
+        <div id="nav2" class="title">
             <img src="./img/home/dubo.png" alt="独播图标"/>
             <span><h1 class="characters">  独  播  电  影</h1></span>
         </div>
         <!-- 2.1独播影院视频 -->
-        <div id="nav2" class="animation">
+        <div class="animation">
             <div>
                 <!-- 2.1.1 左边最大的动画 600*385 右边间隔21px-->
                 <div class="third">
@@ -190,12 +190,12 @@
         </div>
 
         <!-- 3.生化危机系列影院 -->
-        <div class="title">
+        <div id="nav3" class="title">
             <img src="./img/home/biohazard.png" alt="生化危机图标"/>
             <span><h1 class="characters">  生  化  危  机  系  列</h1></span>
         </div>
         <!-- 3.1.生化危机系列视频 -->
-        <div id="nav3" class="animation">
+        <div class="animation">
             <!-- 3.1.1 第一个 150*220 右边间隔21px-->
             <div class="first">
                 <a href="vedio1.html" target="_blank"><img src="./img/film/shenghuaweiji1.jpg" alt="生化危机1"></a>
@@ -253,12 +253,12 @@
         </div>
 
         <!-- 4.私人影院 -->
-        <div class="title">
+        <div id="nav4" class="title">
             <img src="./img/home/siren.png" alt="私人图标"/>
             <span><h1 class="characters">  私  人  电  影</h1></span>
         </div>
         <!-- 4.1.私人影院视频 -->
-        <div id="nav4" class="animation">
+        <div class="animation">
             <!-- 4.1.1 第一个 150*220 右边间隔21px-->
             <div class="first">
                 <a href="vedio1.html" target="_blank"><img src="./img/film/halibote1.jpg" alt="哈利·波特与魔法石" title="哈利·波特与魔法石"></a>
@@ -343,34 +343,20 @@
             <!-- 选项卡内容 -->
                 <div>
                     <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
-                    <div>123</div>
                 </div>
             </div>
         </div>
 
 
         <!-- 侧边栏 -->
-        <div class="page-bulls">
-            <nav>
-                <a href="#nav1"><span>火热上映</span></a>
-                <a href="#nav2"><span>独播影院</span></a>
-                <a href="#nav3"><span>生化危机</span></a>
-                <a href="#nav4"><span>私人电影</span></a>
-                <a href="#nav5"><span>私人电影</span></a>
-            </nav>
+        <div>
         </div>
     </div>
     <!-- 底部 -->
     <!-- 从外部引入html尾部 -->
     <footer id="footer"></footer>
 
-    <!-- JS代码 -->
+<!-- JS代码 -->
 <!--<script src="./js/jquery.min.js"></script>-->
 <!--<script src="./js/popper.min.js"></script>-->
 <!--<script src="./js/bootstrap.min.js"></script>-->
@@ -411,8 +397,8 @@
             $(document).snowfall({image:"./img/background/3.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
             $(document).snowfall({image:"./img/background/4.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15});
         });
-//        标签盒子滑动
 
+//        标签盒子滑动
     $(document).ready(function () {
 
         /*设置默认激活的选项卡eq(i)*/

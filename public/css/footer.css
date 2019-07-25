@@ -1,69 +1,70 @@
 /* 不为人知的东西 */
 body{
-    font:12px/1.5 numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
-    /* word-break: break-all; */
+    font:0.75rem/1.5 numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
+   /* word-break: break-all;
+    */
 }
 /* footer尾巴大盒子 */
 .footer{
     width: 100%;
-    height: 333px;
-    background: rgba(212, 212, 212,.5);
+    height: 21.1rem;
+   /* background: rgba(212, 212, 212,.5);
+    */
+    background: white;
     position: relative;
 }
-
 /* footer上部 */
 .footer-top{
-    border-top:3px solid #f00;
+    border-top:0.1875rem solid #f00;
     width: 100%;
-    height: 180px;
-    margin: 40px 0 20px;
+    height: 11.25rem;
+    margin: 2.5rem 0 1.25rem;
 }
 /* 上部中间内容 */
 .footer-top-center{
-    width: 1120px;
-    height: 180px;
+    width: 70rem;
+    height: 11.25rem;
     position: absolute;
     left: 10%;
 }
-
 /* 热门电影 */
 /* 内容div框1 */
 .content-1{
     display: block;
-    width: 210px;
-    height: 181px;
-    margin-right: 40px;
+    width: 13.125rem;
+    height: 11.3125rem;
+    margin-right: 2.5rem;
     position: relative;
     float: left;
-    top: 20px;
+    top: 1.25rem;
 }
 /* 文字标题 */
 .content-title{
     display: block;
-    font-size: 17px;
-    font-weight: 700px;
-    margin: 0 0 15px;
+    font-size: 1.0625rem;
+    font-weight: 43.75rem;
+    margin: 0 0 0.9375rem;
     color: #666666;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     letter-spacing: normal;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
 /* 链接 */
 .content-info{
     color: #666;
     font-size: 0;
-    letter-spacing: -3px;
+    letter-spacing: -0.1875rem;
 }
 .footer-items{
     display: inline-block;
-    width: 80px;
-    height: 21px;
-    margin-right: 10px;
-    margin-bottom: 7px;
-    font-size: 12px;
+    width: 5rem;
+    height: 1.3125rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.4375rem;
+    font-size: 0.75rem;
     letter-spacing: normal;
-    line-height: 21px;
+    line-height: 1.3125rem;
     vertical-align: top;
 }
 .foot-link{
@@ -73,44 +74,43 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-
 /*特色推荐*/
 /* 内容div框2 */
 .content-2{
     display: block;
-    width: 70px;
-    height: 153px;
-    margin-right: 80px;
+    width: 4.375rem;
+    height: 9.5625rem;
+    margin-right: 5rem;
     position: relative;
-    min-height: 74px;
+    min-height: 4.625rem;
     float: left;
-    top: 20px;
+    top: 1.25rem;
 }
 /*软件下载*/
 /* 内容div框3 */
 .content-3{
     display: block;
-    width: 400px;
-    height: 131px;
-    margin-right: 50px;
+    width: 25rem;
+    height: 8.1875rem;
+    margin-right: 3.125rem;
     font-size: 0;
-    letter-spacing: -3px;
+    letter-spacing: -0.1875rem;
     position: relative;
-    min-height: 74px;
+    min-height: 4.625rem;
     float: left;
-    top: 20px;
+    top: 1.25rem;
 }
 .content-list{
     font-size: 0;
-    letter-spacing: -3px;
+    letter-spacing: -0.1875rem;
 }
 .items{
     display: inline-block;
-    width: 80px;
+    width: 5rem;
     color: #999;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: normal;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-align: center;
     outline: 0 none;
     text-decoration: none;
@@ -118,11 +118,11 @@ body{
 }
 .text-icon{
     display: inline-block;
-    width: 80px;
+    width: 5rem;
     color: #999;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: normal;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -130,48 +130,46 @@ body{
 /*我的二维码*/
 /* 内容div框4 */
 .content-4{
-    width: 150px;
-    height: 181px;
+    width: 9.375rem;
+    height: 11.3125rem;
     text-align: center;
     border-right: none;
-    margin-right: 30px;
+    margin-right: 1.875rem;
     text-decoration: none;
     position: relative;
-    min-height: 74px;
+    min-height: 4.625rem;
     float: left;
-    top: 20px;
+    top: 1.25rem;
 }
 /*服务*/
 /* 内容div框5 */
 .content-5{
-    width: 70px;
-    height: 181px;
+    width: 4.375rem;
+    height: 11.3125rem;
     border-right: none;
     text-decoration: none;
     position: relative;
-    min-height: 74px;
+    min-height: 4.625rem;
     float: right;
-    top: 20px;
+    top: 1.25rem;
 }
-
 /* 上部右边空白 */
 .footer-top-right{
-    width:  230px;
-    height: 180px;
+    width: 14.375rem;
+    height: 11.25rem;
     float: right;
 }
-
 /* 尾巴footer下部 */
 .footer-bottom{
     width: 100%;
-    height: 120px;
-    padding: 15px 0;
+    height: 7.5rem;
+    padding: 0.9375rem 0 0 0;
     text-align: center;
 }
 /* 下部第一行 */
 .footer-bottom-first{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
     text-decoration: none;
 }
 .footer-bottom-first>a{
@@ -179,31 +177,28 @@ body{
     color: #999;
     text-align:center;
 }
-
 /* 下部第二行 */
 .footer-bottom-second{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
 }
 .footer-bottom-second>a{
     text-decoration: none;
     color: #999;
 }
-
 /* 下部第三行 */
 .footer-bottom-third{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
 }
 .footer-bottom-third>a{
     text-decoration: none;
     color: #999;
 }
-
 /* 下部第四行 */
 .footer-bottom-forth{
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
 }
 .footer-bottom-forth>a{
     text-decoration: none;

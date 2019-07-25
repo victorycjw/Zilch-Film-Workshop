@@ -14,145 +14,142 @@ ul{
 /* 头部大盒子 */
 .head{
     width: 100%;
-    height: 136px;
+    height: 8.5rem;
     position: relative;
 }
 /* 功能栏header头 */
 .header{
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     background-color: rgba(212,212,212,.7);
 }
-
 /* 功能栏中间空白 */
 .header-center{
-    width: 80%;
-    height: 100px;
-    margin-left: 10%;
+    width: 65.375rem;
+    height: 6.25rem;
+    margin-left: 10rem;
 }
 /* logo设置 logo*/
 .logo{
-    width: 12%;
-    height: 100px;
+    width: 9.5rem;
+    height: 6.25rem;
     float: left;
 }
 /* 搜索div盒子的属性 */
 .searcher{
-    width: 45%;
-    height: 100px;
-    position: absolute;
-    left: 22%;
+    width: 34.375rem;
+    height: 6.25rem;
+    float: left;
+    position: relative;
 }
 /* 搜索框表单 */
-.search_form{
-    width: 350px;
-    height: 60px;
+.search-form{
+    width: 21.875rem;
+    height: 3.75rem;
     background-image: linear-gradient(to right,rgba(202,202,202,.9),rgba(212,212,212,.9));
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: absolute;
-    top: 20px;
-    left: 150px;
+    top: 1.25rem;
+    left: 9.375rem;
 }
 /* 搜索框的属性 */
-.searcher>form>input{
-    width: 255px;
-    height: 38px;
+.search-input{
+    width: 15.9375rem;
+    height: 2.375rem;
     position: absolute;
-    top: 15%;
-    left: 10px;
+    top: 0.5rem;
+    left: 0.625rem;
 }
 /* 搜索按钮图片属性 */
-.search_btn>img{
-    width: 38px;
-    height:38px;
+.search-img{
+    width: 2.375rem;
+    height:2.375rem;
     position: absolute;
-    top: 20%;
-    right: 20px;
+    top: 0.6rem;
+    right: 1.5rem;
 }
 /* vip历史上传登录按钮图标 */
 .login{
-    width: 23%;
-    height: 100px;
+    width: 21.5rem;
+    height: 6.25rem;
     float: right;
     position: relative;
 }
 /* vip按钮图片 */
 .login-a-vip{
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     position: absolute;
-    left: 5%;
-    top: 30%;
+    left: 4rem;
+    top: 1.8rem;
 }
 /* 历史按钮图片 */
 .login-a-history{
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     position: absolute;
-    left: 30%;
-    top: 32%;
+    left: 7.75rem;
+    top: 2rem;
 }
-
 /*历史下拉菜单*/
 .dd-content{
-    width: 280px;
-    height: 500px;
+    width: 17.5rem;
+    height: 31.25rem;
     z-index: 10000;
     background: #fff;
     display: none;
-    font-size: 12px;
+    font-size: 0.75rem;
     position: absolute;
     left: -300%;
     top: 100%;
-    min-width: 200px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    min-width: 12.5rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.5);
 }
 .dd-content-1{
-    width: 280px;
-    height: 50px;
+    width: 17.5rem;
+    height: 3.125rem;
     text-align: center;
     color: #ff5c38;
-    font-size: 18px;
-    line-height: 50px;
+    font-size: 1.125rem;
+    line-height: 3.125rem;
     background: #e1e1e1;
-    border-bottom: 2px solid #ff5c38;
+    border-bottom: 0.125rem solid #ff5c38;
     display: block;
 }
 .dd-content-2{
-    width: 270px;
-    height: 20px;
+    width: 16.875rem;
+    height: 1.25rem;
     color: #999;
-    font-size: 16px;
-    padding: 0 0 0 20px;
+    font-size: 1rem;
+    padding: 0 0 0 1.25rem;
     display: block;
 }
 .dd-content-3{
-    width: 270px;
-    height: 56px;
+    width: 16.875rem;
+    height: 3.5rem;
     color: #999;
-    font-size: 16px;
-    padding: 10px 0 0 10px;
+    font-size: 1rem;
+    padding: 0.625rem 0 0 0.625rem;
     text-decoration: none;
     display: block;
     position: relative;
 }
 .content1{
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #111;
-    line-height: 18px;
-    margin-left: 10px;
+    line-height: 1.125rem;
+    margin-left: 0.625rem;
     position: absolute;
-    top: 10px;
+    top: 0.625rem;
 }
 .content2{
-    font-size: 10px;
-    margin-left: 10px;
+    font-size: 0.625rem;
+    margin-left: 0.625rem;
     position: absolute;
     bottom: 0;
 }
-
 /*鼠标移上去后修改下拉菜单链接颜色*/
 .dd-content-3:hover{
     background-color: #f1f1f1;
@@ -161,43 +158,38 @@ ul{
 .dropdown:hover .dd-content{
     display: block;
 }
-
-
 /* 上传按钮图片 */
 .login-a-upload{
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     position: absolute;
-    left: 55%;
-    top: 30%;
+    left: 11.5rem;
+    top: 2rem 
 }
 /* 登录按钮图片 */
 .login-a-login{
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     position: absolute;
-    left: 80%;
-    top: 30%;
+    left: 15.25rem;
+    top: 2rem;
 }
-
-
 /* nav导航栏 */
 #nav{
     width: 100%;
-    height: 40px;
-    z-index: 1111;
+    height: 2.5rem;
+    z-index: 2;
     background-color: #d8d8d8;
     margin: 0 auto;
     white-space: nowrap;
     position: relative;
 }
-
 .ul{
-    width: 1120px;
-    height: 40px;
-    margin-left: 10%;
+    width: 65.375rem;
+    height: 2.5rem;
+    margin-left: 10rem;
 }
 /*容器<li>需要定位下拉内容*/
 .dropdown{
@@ -208,29 +200,29 @@ ul{
 .dropbtn{
     display: inline-block;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 0.625rem;
     background-color: #d8d8d8;
     color: #000;
-    font-size: 14px;
+    font-size: 0.875rem;
     cursor: pointer;
-    line-height: 40px;
+    line-height: 2.5rem;
     float: left;
 }
-
 /*下拉内容（默认隐藏）*/
 .dropdown-content{
     display: none;
-    font-size: 12px;
+    font-size: 0.75rem;
     position: absolute;
-    top: 40px;
+    top: 2.5rem;
     background-color: #d8d8d8;
-    min-width: 76px;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
+    min-width: 4.75rem;
+   /*box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.5);
+    */
 }
 /*下啦菜单的链接*/
 .dropdown-content>a{
     color: black;
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     text-decoration: none;
     display: block;
 }

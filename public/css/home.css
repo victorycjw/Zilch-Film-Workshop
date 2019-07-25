@@ -19,16 +19,17 @@
 /*top: 140px;*/
 /*}*/
 
+
 /*文字标题*/
 .title{
     display: block;
-    width: 80%;
+    width: 65.375rem;
     padding-top: 0.5rem;
     border:2px;
     /*margin-left: 230px;*/
     /*margin-right: 230px;*/
     border-bottom: 3px solid #999;
-    margin: 0 10% 20px 10%;
+    margin: 0 10rem 1.25rem 10rem;
 }
 /*标题文字样式*/
 .characters{
@@ -181,71 +182,3 @@
 
 
 /* 侧边栏 */
-.page-bulls {
-    position:fixed;
-    top:50%;
-    right:0;
-    z-index:20;
-    margin-top:-55px
-}
-.page-bulls nav {
-    text-align:right;
-    margin-right:20px
-}
-.page-bulls nav a {
-    display:block;
-    text-decoration:none;
-    position:relative;
-    width:20px;
-    opacity:.6;
-    height:28px;
-    text-align:center
-}
-.page-bulls nav a span {
-    font-family:"Open Sans",sans-serif;
-    font-size:14px;
-    font-weight:100;
-    display:block;
-    position:absolute;
-    top:50%;
-    right:0;
-    opacity:0;
-    white-space:nowrap;
-    padding:8px 8px 8px 16px;
-    border-radius:3px 0 0 3px;
-    background:rgba(0,0,0,.76);
-    color:#e1e1e1;
-    margin-top:-14px;
-    line-height:1em;
-    transition:all 300ms
-}
-.page-bulls nav a span:before {
-    content:'';
-    display:block;
-    position:absolute;
-    right:-30px;
-    top:50%;
-    margin-top:-15px;
-    border:15px solid transparent;
-    border-left-color:rgba(0,0,0,.76)
-}
-.page-bulls nav a:after {
-    position:absolute;
-    content:'';
-    display:inline-block;
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background:rgba(0,0,0,.5);
-    margin-left:-5px;
-    margin-top:-5px;
-    top:50%;
-    left:50%
-}
-.page-bulls nav a:hover {
-    opacity:1
-}
-.page-bulls nav a:hover span {
-    right:36px;
-    opacity:1
-}
