@@ -2,15 +2,15 @@
     position: relative;
 }
 .film{
-    width: 1580px;
-    height: 480px;
-    margin: 40px auto;
+    width: 81.25rem;
+    height: 30rem;
+    margin: 2.5rem auto;
     position: relative;
 }
 .vedio{
-    width: 850px;
-    height: 480px;
+    width: 53.125rem;
+    height: 30rem;
     position: absolute;
-    left: 230px;
+    left: 7.5rem;
     display: block;
 }

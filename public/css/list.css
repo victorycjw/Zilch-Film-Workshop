@@ -1,54 +1,53 @@
-/* bodyerÖ÷Ìå */
+/* bodyerä¸»ä½“ */
 #bodyer{
     width: 100%;
-    height: 3000px;
+    height: 187.5rem;
     position: relative;
 }
-/*³Åtable£¬·ÀÖ¹Ó°ÏìÁË²¼¾Ö*/
+/*æ’‘tableï¼Œé˜²æ­¢å½±å“äº†å¸ƒå±€*/
 #bodyer:before{
-    width: 100%;
-    height: 140px;
     display: table;
     content: "";
 }
-/*Ñ¡Ïî¿ò´óºĞ×Ó*/
+/*é€‰é¡¹æ¡†å¤§ç›’å­*/
 .film-list{
-    width: 100%;
-    height: 250px;
+    width: 68.75rem;
+    height: 15.625rem;
     background: #f8f8f8;
-    font: 13px numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
-    border-radius: 4px;
-    margin: 40px 0 0 120px;
-    padding: 1px 26px;
+    font: 0.8125rem numFont,PingFangSC-Regular,Tahoma,Microsoft Yahei,sans-serif;
+    border-radius: 0.25rem;
+    margin: 2.5rem 0 0 7.5rem;
+    padding: 0.0625rem 1.625rem;
     overflow: hidden;
     position: relative;
 }
 .film-list-line{
-    margin: 26px 0;
-    padding-left: 90px;
+    margin: 1.625rem 0;
+    padding-left: 5.625rem;
     position: relative;
 }
 .film-list-label{
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 50px;
-    margin-right: 20px;
-    padding: 0 5px;
-    border-radius: 16px 0 16px 16px;
+    min-width: 3.125rem;
+    margin-right: 1.25rem;
+    padding: 0 0.3125rem;
+    border-radius: 1rem 0 1rem 1rem;
     background-color: #7f7f8b;
     color: #fff;
-    line-height: 32px;
+    line-height: 2rem;
     text-align: center;
 }
 .film-list-items{
     display: inline-block;
-    margin: 2px 0;
-    padding: 0 10px;
-    border-radius: 15px;
+    margin: 0.125rem 0;
+    padding: 0 0.625rem;
+    border-radius: 0.9375rem;
     color: #999;
-    /*font-weight: 700;*/
-    line-height: 28px;
+   /*font-weight: 700;
+    */
+    line-height: 1.75rem;
     text-decoration: none;
     vertical-align: top;
 }
@@ -60,70 +59,67 @@
 .film-list .film-list-items:hover{
     color: #ff5c38;
 }
-
-/*ÄÚÈİ´óºĞ×Ó*/
+/*å†…å®¹å¤§ç›’å­*/
 .content{
     width: 100%;
-    margin: 50px 0 0 0;
-    /*border: 1px solid #999;*/
+    margin: 3.125rem 0 0 0;
+   /*border: 1px solid #999;
+    */
 }
-/*¶¯»­*/
+/*åŠ¨ç”»*/
 .animation{
-    width: 1580px;
+    width: 100%;
     position: relative;
 }
-/*·ÀÖ¹¸ß¶ÈÌ®Ëú*/
+/*é˜²æ­¢é«˜åº¦åå¡Œ*/
 .animation:after{
     display: table;
     content: "";
 }
-
 .first{
-    width: 150px;
-    height: 290px;
+    width: 9.375rem;
+    height: 18.125rem;
     display: inline-block;
     position: relative;
-    margin: 0 0 40px 200px;
+    margin: 0 0 2.5rem 8rem;
     padding: 0;
-    font-size: 12px;
+    font-size: 0.75rem;
     overflow: hidden;
     letter-spacing: normal;
     vertical-align: top;
 }
-
 .second{
-    width: 150px;
-    height: 290px;
+    width: 9.375rem;
+    height: 18.125rem;
     display: inline-block;
     position: relative;
-    margin: 0 0 40px 21px;
+    margin: 0 0 2.5rem 0.5rem;
     padding: 0;
-    font-size: 12px;
+    font-size: 0.75rem;
     overflow: hidden;
     letter-spacing: normal;
     vertical-align: top;
 }
-
-/*ÊÓÆµÏÂÎÄ×Öa±êÇ©ÊôĞÔ*/
+/*è§†é¢‘ä¸‹æ–‡å­—aæ ‡ç­¾å±æ€§*/
 .art{
-    width: 150px;
-    height: 23px;
-    font-size: 15px;
+    width: 9.375rem;
+    height: 1.4375rem;
+    font-size: 0.9375rem;
     color: #111;
     text-decoration: none;
-    line-height: 23px;
+    line-height: 1.4375rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
 }
 .art_2{
-    width: 150px;
-    height: 20px;
-    margin: 3px 0 0;
+    width: 9.375rem;
+    height: 1.25rem;
+    margin: 0.1875rem 0 0;
     overflow: hidden;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #999;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: text;
